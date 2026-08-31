@@ -1,0 +1,43 @@
+# Branch flag event per Content Bible 5. Gated on the Fel/Int thresholds the Bible
+# specifies; its only structural job is to set Officer-Candidate for Stage 6.
+id: training_003_officer_candidacy
+stage: training
+tone: tense
+requires: { stat_min: { Fel: 40, Int: 38 }, tags_none: [Officer-Candidate] }
+weight: 4
+text: >
+  You were taken out of drill and put in a room with a table, a Schola-trained major
+  with a datapad, and a scenario: your platoon is pinned, your vox is out, and the
+  bridge behind you is mined by your own side on a timer you cannot read. He wanted an
+  answer in under a minute. He was timing it openly, so you would know.
+choices:
+  - id: give_an_order
+    label: "Give a clear order and commit to it"
+    stat_changes: { Fel: 3, WP: 3 }
+    add_tags: [Officer-Candidate]
+    set_rank: "Cadet"
+    result_text: >
+      Your plan was not the best one available. You said it in eleven words without
+      qualifying it, which was the thing being measured, and the major marked you Cadet
+      before you had left the room. The Guard does not need officers who are right. It
+      needs officers who are audible.
+  - id: ask_for_more
+    label: "Ask what the timer says"
+    stat_changes: { Int: 4, Per: 2 }
+    add_tags: [Thinks-Too-Much]
+    result_text: >
+      "You cannot read it," he said. "That was in the scenario." You asked who set it.
+      He put the datapad down and answered, and the two of you had a genuinely
+      interesting eight minutes, at the end of which he did not mark you Cadet. He wrote
+      "staff" instead, and underlined it once.
+  - id: refuse_the_room
+    label: "Say the platoon should choose"
+    stat_changes: { Fel: 2, WP: -2 }
+    add_tags: [Squad-Trusted, Marked-Difficult]
+    result_text: >
+      He wrote for a while. Then he explained, without raising his voice, exactly which
+      article of the Imperial Infantryman's Uplifting Primer your answer had contradicted
+      and what the Commissariat does about it, and then he sent you back to drill. You
+      were not flagged for anything. That was the point of the exercise, and you had
+      passed a different test than the one being given.
+terminal: false

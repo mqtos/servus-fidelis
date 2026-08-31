@@ -1,0 +1,35 @@
+id: training_001_the_drill_abbot
+stage: training
+tone: tense
+requires: {}
+weight: 6
+text: >
+  Drill Abbot Kesh had trained eleven regiments and buried nine of them. He explained
+  this on the first morning, in the tone of a man reading out a weather report, and then
+  he asked the assembled recruits to consider whether the number nine was a comment on
+  the regiments or on him.
+choices:
+  - id: shout_it_back
+    label: "Answer at the top of your voice"
+    stat_changes: { WP: 3, Fel: 2 }
+    add_tags: [Loud-In-Formation]
+    result_text: >
+      You gave him the answer he wanted at a volume that hurt your own throat. He moved
+      down the line without comment, which from Kesh was a commendation. Volume is not a
+      virtue in a soldier, but it is the first one anyone can measure.
+  - id: think_about_it
+    label: "Actually consider the question"
+    stat_changes: { Int: 3, WP: 1 }
+    add_tags: [Thinks-Too-Much]
+    result_text: >
+      Nine of eleven is not a bad rate for the Gathral front, which meant he was
+      bragging. You worked this out standing at attention in the cold and said nothing,
+      and Kesh, who missed very little, saw you working it out and let it go.
+  - id: keep_your_head_down
+    label: "Say nothing and hope he moves on"
+    stat_changes: { Per: 2, T: 1 }
+    result_text: >
+      He moved on. He always moved on. Two men either side of you were selected for
+      things that morning and you were not, and by the end of the week you had a working
+      theory about the relationship between being noticed and being alive.
+terminal: false

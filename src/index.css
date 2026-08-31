@@ -1,0 +1,170 @@
+@import 'tailwindcss';
+
+@import '@fontsource/cinzel/400.css';
+@import '@fontsource/cinzel/600.css';
+@import '@fontsource/cinzel/700.css';
+@import '@fontsource/eb-garamond/400.css';
+@import '@fontsource/eb-garamond/400-italic.css';
+@import '@fontsource/eb-garamond/600.css';
+
+@theme {
+  --font-display: 'Cinzel', Georgia, serif;
+  --font-body: 'EB Garamond', Georgia, serif;
+  --font-mono: ui-monospace, 'Cascadia Mono', 'Consolas', monospace;
+
+  --color-ink: #14110e;
+  --color-ink-soft: #2a251e;
+  --color-parchment: #e8e0cf;
+  --color-bone: #f4efe4;
+  --color-gunmetal: #4a4f52;
+  --color-brass: #b08d4f;
+  --color-brass-lit: #dcb771;
+  /* Oxblood is a surface and border colour only. As type on a dark ground it measures
+     about 2:1, so anything that has to be read uses the lit variant instead. */
+  --color-blood: #7a2020;
+  --color-blood-lit: #cf5f42;
+
+  /* The sector chart is the one light surface in the game, so it needs its own ink. The
+     rest of the palette is built to sit on near-black and every one of those colours
+     fails on paper: brass-lit on vellum measures 1.9:1.
+
+     Measured against #f0e3c8 by the sRGB transfer function, not estimated:
+       chart-ink   on vellum   12.40:1
+       chart-ink   on the painting's mid-ochre land (#d9c39a)   9.17:1
+       chart-blood on the same land   4.71:1, against a 3:1 floor for a non-text mark
+     Every marker also carries a vellum halo, because the painting darkens to about
+     rgb(102 82 57) in the corners and unhaloed ink disappears into it. */
+  --color-vellum: #f0e3c8;
+  --color-chart-ink: #2e2013;
+  --color-chart-blood: #8f2f1f;
+
+  /* Headings scale with the viewport because every screen is now full-bleed art with
+     type over it: a fixed size that looks epic at 1440 looks absurd at 375. */
+  --text-hero: clamp(2.5rem, 7.5vw, 5.5rem);
+  --text-scene: clamp(2rem, 5.5vw, 4rem);
+  --text-title: clamp(1.75rem, 3.5vw, 2.75rem);
+
+  /* The one timing system. Nothing anywhere else may write a duration. */
+  --ease-cinematic: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-quick: 160ms;
+  --duration-ui: 420ms;
+  --duration-scene: 900ms;
+  /* The one slow ambient beat, used where something on screen is meant to read as still
+     happening rather than as a finished state. */
+  --duration-ambient: 3200ms;
+}
+
+/* Slow zoom on the backdrop. Long enough that it reads as a live scene rather than an
+   animation, and it never returns to its start so no seam is visible. */
+@keyframes drift {
+  from {
+    transform: scale(1.06) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.16) translate3d(-1.2%, -1.6%, 0);
+  }
+}
+
+@keyframes scene-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* The contested world on the sector chart. It is the only thing on that screen still in
+   motion, which is the whole point of it. */
+@keyframes pulse-ring {
+  0% {
+    opacity: 0.55;
+    transform: scale(0.7);
+  }
+  70% {
+    opacity: 0;
+    transform: scale(1.25);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.25);
+  }
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-parchment);
+  font-family: var(--font-body);
+  /* The backdrop is fixed and the content scrolls over it, so an elastic overscroll
+     would expose bare ink at the top of a long Service Record. */
+  overscroll-behavior-y: none;
+}
+
+@utility drift {
+  animation: drift 40s var(--ease-cinematic) forwards;
+}
+
+@utility scene-in {
+  animation: scene-in var(--duration-scene) var(--ease-cinematic) both;
+}
+
+@utility pulse-ring {
+  animation: pulse-ring var(--duration-ambient) var(--ease-cinematic) infinite;
+}
+
+@utility rise-in {
+  animation: rise-in var(--duration-ui) var(--ease-cinematic) both;
+}
+
+/* Staggering the entrance is what separates a scene that assembles itself from one that
+   simply appears. Applied to a container; children animate in document order. */
+@utility rise-stagger {
+  & > * {
+    animation: rise-in var(--duration-ui) var(--ease-cinematic) both;
+  }
+  & > *:nth-child(1) {
+    animation-delay: 0ms;
+  }
+  & > *:nth-child(2) {
+    animation-delay: 90ms;
+  }
+  & > *:nth-child(3) {
+    animation-delay: 180ms;
+  }
+  & > *:nth-child(4) {
+    animation-delay: 270ms;
+  }
+  & > *:nth-child(5) {
+    animation-delay: 360ms;
+  }
+  & > *:nth-child(6) {
+    animation-delay: 450ms;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 1ms !important;
+  }
+}

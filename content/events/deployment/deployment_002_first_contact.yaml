@@ -1,0 +1,75 @@
+# The first card in the run where the common path can kill you. Deliberately placed
+# after the drop so the player has had one deployment beat to settle first.
+id: deployment_002_first_contact
+stage: deployment
+tone: grim
+requires: {}
+weight: 6
+text: >
+  It started as a noise problem. Somewhere ahead of the wire, in ground nobody had
+  surveyed, something was moving that was not the wind, and the corporal put four of you
+  out to establish what. He used the word "establish". By the time you were forty metres
+  out the noise had established itself.
+choices:
+  - id: fire
+    label: "Fire on it"
+    stat_check: { stat: [BS, WS], difficulty: 0 }
+    on_critical_success:
+      stat_changes: { BS: 4, WS: 2, WP: 3 }
+      add_tags: [Blooded, Noted-Early]
+      result_text: >
+        Three rounds, all of them where they needed to be, and then a silence with a
+        different texture than the one before. The corporal went out to look and came
+        back without saying anything, which in his idiom was a report. Your name went
+        into the company log for the first time.
+    on_success:
+      stat_changes: { BS: 2, WP: 2 }
+      add_tags: [Blooded]
+      result_text: >
+        You emptied most of a charge pack into the dark and something out there stopped.
+        Whether you stopped it or it decided to stop was never determined and, standing
+        there with your hands shaking, you found you did not need it determined.
+    on_failure:
+      stat_changes: { T: 2, WP: -1 }
+      add_tags: [Blooded, Flinches]
+      result_text: >
+        You fired high, all of it, and the man beside you dealt with the problem while
+        you were still working the pack. He did not mention it. The corporal did, twice,
+        at volume, and then never again, because by the end of the month there were more
+        pressing failures to catalogue.
+    on_critical_failure:
+      terminal: true
+      ending_category: pointless_death
+      result_text: >
+        The charge pack was seated wrong, which was a thing you had been taught to check
+        and had checked, on a lasgun that had been issued eleven times. It did not
+        matter whose fault it was. You were nineteen and you were forty metres past the
+        wire and the report recorded the position, not the reason.
+  - id: freeze
+    label: "Stay absolutely still"
+    stat_check: { stat: [WP, Per], difficulty: 10 }
+    on_success:
+      stat_changes: { Per: 4, WP: 2 }
+      add_tags: [Cold-Handed]
+      result_text: >
+        You did not move for nineteen minutes and neither did it, and then it went away
+        in a direction you were able to describe precisely afterwards. The intelligence
+        was worth considerably more than the kill would have been. Nobody thanked you
+        for it, but somebody used it.
+    on_failure:
+      stat_changes: { WP: -2, Ag: 2 }
+      add_tags: [Flinches]
+      result_text: >
+        You held it for a long time and then your leg went and you were running before
+        you had chosen to. Nothing followed you. The shame of that lasted longer than
+        the deployment did, and it was not a short deployment.
+  - id: pull_them_back
+    label: "Call the patrol back in"
+    stat_changes: { Fel: 3, WP: 1, Per: -1 }
+    add_tags: [Squad-Trusted]
+    result_text: >
+      Four out, four back, no contact report, and a corporal who was extremely clear
+      about what he thought of that. Two nights later the same ground was surveyed
+      properly by a section of eleven, and nine of them came back, and nobody ever
+      connected the two events out loud.
+terminal: false

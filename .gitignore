@@ -1,0 +1,21 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.vite
+.claude/settings.local.json
+
+# Never commit the API key. .env.example is the committed template.
+.env
+.env.*
+!.env.example
+
+# Multi-megabyte PNGs straight from the model. Kept locally so a re-encode never costs
+# another API call, but only the WebP derivative in src/assets/art is committed.
+art-raw
+
+# Screenshots and traces written during in-browser verification. Regenerated on demand,
+# never part of the build.
+.shots
+.playwright-mcp

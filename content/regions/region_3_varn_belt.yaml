@@ -1,0 +1,9 @@
+id: region_varn_belt
+name: "The Varn Belt"
+order: 3
+min_player_level: 16
+bounds: { x: 32, y: 19, width: 25, height: 48 }
+survey: >
+  Agri worlds, in a band the sector's grain comes out of and very little else. Nobody has
+  fought here in two centuries, which the Departmento Munitorum records as stability and
+  the people who live there record as luck.

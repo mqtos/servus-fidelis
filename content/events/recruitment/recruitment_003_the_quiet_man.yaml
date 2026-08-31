@@ -1,0 +1,57 @@
+# Inquisition seed, per Content Bible 4. Rare and stat-gated: the Inquisition branch is
+# a Phase 2+ arc, this card only plants the tag that makes it reachable.
+id: recruitment_003_the_quiet_man
+stage: recruitment
+tone: tense
+# Gate carries the rarity (~3% of characters reach Int 36 / Per 34 by recruitment), so
+# the weight is high: if you built for this, it should be what happens to you.
+requires: { stat_min: { Int: 36, Per: 34 } }
+weight: 12
+text: >
+  The draft went as drafts go, but afterwards a man in unremarkable clothes was waiting
+  at the end of the processing line with your file already open. He was not Munitorum.
+  He did not say what he was. He asked you three questions about your own childhood that
+  you had never told anyone, and he already knew the answers to two of them.
+choices:
+  - id: answer_honestly
+    label: "Answer the third one truthfully"
+    stat_changes: { Int: 3, WP: 2 }
+    add_tags: [Inquisition-Noticed, Noted-Early]
+    set_regiment: "the 114th Gathral Rifles"
+    result_text: >
+      He wrote nothing down. He closed the file, thanked you by a name you had not given
+      him, and walked off into the crowd of conscripts as though he had been standing in
+      it the whole time. You went to the 114th Gathral Rifles like everyone else. Your
+      file went somewhere else.
+  - id: lie
+    label: "Lie, and see what he does"
+    stat_check: { stat: [Fel, Int], difficulty: -20 }
+    on_success:
+      stat_changes: { Fel: 3, WP: 2 }
+      add_tags: [Inquisition-Noticed, Talks-His-Way-Through]
+      set_regiment: "the 114th Gathral Rifles"
+      result_text: >
+        He accepted it. Or he appeared to, which in his profession is the same
+        performance done for a different reason. Either way the file closed and you
+        marched. You have never been certain which of the two it was, and you have had
+        years to think about it.
+    on_failure:
+      stat_changes: { WP: -2, Per: 2 }
+      add_tags: [Inquisition-Noticed, Marked-Difficult]
+      set_regiment: "the 114th Gathral Rifles"
+      result_text: >
+        He let you finish the whole lie. Then he read your own words back to you from a
+        transcript dated before you had spoken them, which was not possible, and which
+        he did not explain. "Thank you," he said. "That was useful." It had been useful
+        to him. It had not been useful to you.
+  - id: refuse_to_speak
+    label: "Refuse to answer anything"
+    stat_changes: { WP: 4, Fel: -2 }
+    add_tags: [Inquisition-Noticed, Hard-Case]
+    set_regiment: "the 114th Gathral Rifles"
+    result_text: >
+      You gave him silence for eleven minutes. He seemed to find it interesting rather
+      than obstructive, the way a man finds a locked door interesting when he is not in
+      a hurry. He noted the duration. That was all he noted, and it was enough to keep
+      the file open.
+terminal: false

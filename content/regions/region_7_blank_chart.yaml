@@ -1,0 +1,8 @@
+id: region_blank_chart
+name: "The Blank Chart"
+order: 7
+min_player_level: 70
+bounds: { x: 81, y: 28, width: 13, height: 35 }
+survey: >
+  The sector's own doorway and the four positions holding it. Past them the chart is
+  blank, which is a statement about the Cartography Corps and not about what is there.

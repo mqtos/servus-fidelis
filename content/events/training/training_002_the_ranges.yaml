@@ -1,0 +1,50 @@
+id: training_002_the_ranges
+stage: training
+tone: quiet
+requires: {}
+weight: 5
+text: >
+  Marksmanship qualification was forty rounds at two hundred metres with a lasgun that
+  had been issued eleven times before you. The instructors did not teach so much as
+  record. Whatever you already were, the range was going to write it down.
+choices:
+  - id: qualify
+    label: "Shoot for score"
+    stat_check: { stat: [BS, Per], difficulty: 0 }
+    on_critical_success:
+      stat_changes: { BS: 5, Per: 2 }
+      add_tags: [Marksman, Noted-Early]
+      result_text: >
+        Thirty-eight of forty, with the last two called as equipment. The scorer checked
+        the target twice, then checked your name against the manifest, then wrote
+        something in a second column that had been empty for everyone before you.
+    on_success:
+      stat_changes: { BS: 3 }
+      result_text: >
+        Twenty-nine of forty, comfortably qualified, unremarkable. This is the correct
+        score to get. Men who shoot twenty-nine are sent where regiments go. Men who
+        shoot thirty-eight are sent where the shooting is.
+    on_failure:
+      stat_changes: { BS: 1, T: 1 }
+      add_tags: [Poor-Shot]
+      result_text: >
+        Fourteen. You were requalified twice and passed on the third attempt by a margin
+        that everyone involved agreed not to discuss. The lasgun was blamed. The lasgun
+        was not the problem.
+    on_critical_failure:
+      stat_changes: { BS: -2, Fel: -2 }
+      add_tags: [Poor-Shot, Marked-Difficult]
+      result_text: >
+        You put a round through the roof of the butts and another into the berm forty
+        degrees off the lane. Nobody was hit. Your name was moved to a list of men who
+        are given the heavy things to carry instead of the accurate things to hold.
+  - id: help_the_man_beside_you
+    label: "Spend your rounds coaching the man beside you"
+    stat_changes: { Fel: 4, BS: -1, Int: 1 }
+    add_tags: [Squad-Trusted]
+    result_text: >
+      He qualified. You did not, quite, and had to sit the requalification. He was dead
+      within the year and it made no difference at all to anything, except that for a
+      few months a man who was going to die anyway could hit what he aimed at, and knew
+      it, and stood differently because of it.
+terminal: false

@@ -1,0 +1,31 @@
+id: campaign_31_ushanek
+name: "Ushanek"
+region: region_silent_marches
+order: 31
+threshold: 400
+runs_ceiling: 15
+world_type: feral
+position: { x: 71.5, y: 53 }
+flavor_intro: >
+  Ushanek has never sent a signal because Ushanek has never had anything to send one
+  with. The sector file consists of an orbital pict taken two hundred years ago, a
+  note that the landmass is seasonal, and a population estimate given as "some". The
+  landmass being seasonal turns out to mean that for four months a year the shallow
+  sea drains east and roads appear across the bottom of it, and for the other eight
+  months there are no roads and no bottom. The Guard landed in month nine. The
+  briefing did not mention any of this because nobody had written it down.
+win_summary: >
+  Ushanek is compliant, which here means that the eleven clans who use the drained
+  roads have agreed not to fight the Imperium and have been issued a document saying
+  so, in a language none of them read. A tithe has been assessed. It will be collected
+  during the low water, because there is no other way to reach the interior, and the
+  assessor has been told this and has appealed against it. Cartography Corps has
+  upgraded the world from unsurveyed to partially surveyed on the strength of nine
+  square kilometres.
+loss_summary: >
+  The regiment on Ushanek stopped transmitting in the second month of the high water,
+  when the roads went under and the relief column found itself standing on a coast
+  that had not been there when the maps were drawn. No landing was attempted after
+  that. The world has been returned to its previous classification of unsurveyed,
+  which is accurate, and the men on it have been returned to the category of missing,
+  which is a filing convenience.

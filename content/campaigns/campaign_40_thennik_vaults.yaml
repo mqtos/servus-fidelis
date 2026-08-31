@@ -1,0 +1,33 @@
+id: campaign_40_thennik_vaults
+name: "The Thennik Vaults"
+region: region_blank_chart
+order: 40
+threshold: 620
+runs_ceiling: 17
+world_type: dead
+position: { x: 88, y: 58 }
+flavor_intro: >
+  Thennik died four thousand years ago and the Imperium went on using it. Under the
+  ash lie one hundred and six sealed vaults holding the Cartography Corps' original
+  survey of this sector, the whole of it, the document the current chart was cut down
+  from. The Corps has applied twice to open them and been refused twice, in writing,
+  on the grounds that the chart is sufficient for the purposes to which it is put.
+  There is nothing else on Thennik worth the shipping. Both sides are digging, and
+  only one of them holds a permit to.
+win_summary: >
+  Thennik is held and the vaults are held with it. Vault Nine was opened during the
+  fighting by shellfire rather than by permit, and its contents were catalogued,
+  crated and shipped under seal to the Corps, which has confirmed receipt and nothing
+  further. The chart issued the following year is identical to the one before it,
+  blank in the same place, to the same margin, down to the printer's mark. Sector
+  Command has recorded the campaign as concluded on the grounds that there is no next
+  name to advance to. The regiments still on Thennik have been left in place pending
+  an instruction that the schedule does not provide for.
+loss_summary: >
+  Thennik was lost with all one hundred and six vaults intact, sealed and unread. The
+  withdrawal lifted three hundred personnel, the chapel relics and the vault keys,
+  which were the only items on the manifest anyone argued about. Cartography Corps has
+  been informed that its survey is now in enemy hands and has answered, inside the
+  year, that the material was superseded and carries no operational value. The chart
+  is unchanged. Past this position it is blank, it will stay blank, and the Corps has
+  now put in writing that this was always the intention.

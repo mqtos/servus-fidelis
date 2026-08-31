@@ -1,0 +1,32 @@
+id: campaign_35_sarnhold_ambit
+name: "Sarnhold Ambit"
+region: region_silent_marches
+order: 35
+threshold: 440
+runs_ceiling: 16
+world_type: fortress
+position: { x: 65, y: 36 }
+flavor_intro: >
+  Sarnhold was built to close a shipping lane that was rerouted two hundred and ten
+  years ago. The reroute was a minor administrative act and the fortress was not
+  informed, so it has spent ten generations holding a door onto an empty room. It was
+  designed for a garrison of four hundred thousand and currently contains nine
+  thousand, all of them descended from the original establishment, all of them still
+  drilling to a rotation written for the full complement. The guns work. That is the
+  part that matters now, because the lane has traffic again and none of it is ours.
+win_summary: >
+  Sarnhold held, as it was built to, using batteries that had not fired in two
+  centuries and a fire plan that assumed forty times the men available to execute it.
+  The Departmento Munitorum has recognised the garrison as an active formation, which
+  it had not been since the reroute, and has issued two hundred and ten years of
+  accumulated regimental honours in a single ceremony lasting most of a day. It has
+  also issued a demand for two hundred and ten years of unfiled returns. The
+  quartermaster is understood to have them.
+loss_summary: >
+  Sarnhold fell from the inside of a fortification built to be attacked from one
+  direction only. Nine thousand men held the Ambit for six weeks against a force that
+  did not need to use the lane at all and simply came over the top of the world. The
+  final return, filed in the correct format and countersigned, gives the garrison
+  strength as zero and requests instructions. It reached sector command four months
+  later and was routed, correctly, to an office that had been closed since the
+  reroute.

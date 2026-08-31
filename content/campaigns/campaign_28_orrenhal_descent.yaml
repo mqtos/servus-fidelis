@@ -1,0 +1,30 @@
+id: campaign_28_orrenhal_descent
+name: "The Orrenhal Descent"
+region: region_kolvar_deeps
+order: 28
+threshold: 380
+runs_ceiling: 15
+world_type: death
+position: { x: 63, y: 78 }
+flavor_intro: >
+  Everything worth holding on Orrenhal is at the bottom of a single shaft forty-one
+  kilometres deep, and everything that wants to kill you is on the way down. The
+  descent takes nine hours in a cage rated for six, on a cable the combine has
+  deferred replacing for the eleventh consecutive year. Below the twenty kilometre
+  mark the rock is warm and something lives in it that the survey never named, because
+  the surveyor who found it did not come back up. The enemy holds the lower galleries.
+  So, in a manner the Munitorum finds difficult to cost, does the shaft itself.
+win_summary: >
+  The lower galleries are held. Casualties on the descent exceeded casualties in the
+  fighting by a factor of three, which the combine has cited as evidence that its
+  cable is not the problem. Orrenhal is now Imperial down to the forty-first
+  kilometre, and no further, and a standing order forbids any survey below that depth
+  without written authorisation from an officer who does not exist. Production
+  resumes next quarter.
+loss_summary: >
+  The order to withdraw from Orrenhal arrived while the cage was descending, and the
+  cage continued to descend, because there is no way to signal it once it is past the
+  ninth kilometre. Two companies reached the bottom of a shaft that was no longer
+  anybody's. The combine has sealed the head of the descent with poured rockcrete and
+  filed the world as an abandoned working. It has not filed the men, on the grounds
+  that they were the Guard's and not its own.

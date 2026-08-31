@@ -1,0 +1,9 @@
+id: region_ambrosian_reach
+name: "The Ambrosian Reach"
+order: 4
+min_player_level: 30
+bounds: { x: 55, y: 8, width: 22, height: 23 }
+survey: >
+  Shrine worlds, pilgrim routes and the cathedrals that sit on both. The Ecclesiarchy
+  governs here and the Munitorum defers, which means the surveys are devotional documents
+  and the population figures count only the faithful.

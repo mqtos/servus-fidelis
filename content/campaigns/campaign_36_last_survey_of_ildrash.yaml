@@ -1,0 +1,33 @@
+id: campaign_36_last_survey_of_ildrash
+name: "The Last Survey of Ildrash"
+region: region_silent_marches
+order: 36
+threshold: 470
+runs_ceiling: 16
+world_type: dead
+position: { x: 77, y: 45 }
+flavor_intro: >
+  Ildrash reported normally for nine hundred years and then filed one final document,
+  catalogued as IX-114, which runs to a page and a half and stops in the middle of a
+  sentence about the weather. Everything after that is inference. The world is dead
+  now, comprehensively and without obvious mechanism, and it is being contested
+  because whatever ended it is still down there in the deep vaults under the old
+  Prefecture and more than one party would like to own that. Three previous
+  expeditions have gone in. Two returned nothing and the third returned a supply
+  manifest, correctly completed, in a hand that no living clerk has been able to
+  match.
+win_summary: >
+  Ildrash is secure and the deep vaults under the Prefecture have been sealed by the
+  same authority that authorised opening them, eleven days apart, on the same
+  signature. What was found is recorded in an annexe that is not held at sector level
+  and is not held above it either, and the officers who wrote it have been reassigned
+  individually to postings four months apart. Document IX-114 has been reclassified.
+  The catalogue entry now reads that the file is complete, which is a change of one
+  word and the end of the matter.
+loss_summary: >
+  The Imperium has withdrawn from Ildrash and the vaults are open. Sector command's
+  assessment is that the loss is of limited strategic consequence, the world having
+  been dead before the fighting and dead after it, and this assessment is almost
+  certainly true. The Cartography Corps has marked the approaches with a symbol it
+  uses nowhere else in the sector and has not been asked to explain it. The last
+  regiment's returns end mid-column. Somebody has filed them anyway.

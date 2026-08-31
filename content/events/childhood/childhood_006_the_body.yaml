@@ -1,0 +1,43 @@
+id: childhood_006_the_body
+stage: childhood
+tone: grim
+requires: {}
+weight: 3
+text: >
+  There was a body at the bottom of the stair and it had been there since at least the
+  previous shift, because the light had come round and gone again. Nobody had moved it.
+  Moving it was somebody's job and that somebody had not been assigned yet.
+choices:
+  - id: report_it
+    label: "Report it to someone in a uniform"
+    stat_changes: { WP: 2, Fel: 1 }
+    add_tags: [Rule-Follower]
+    result_text: >
+      The warden wrote it in a book. Two days later a cart came. You understood, from
+      the exactness of the delay, that the system was not broken. It was working at the
+      speed it was designed to work at, and that was the frightening part.
+  - id: search_it
+    label: "Search it first"
+    stat_check: { stat: [Ag, Per], difficulty: 10 }
+    on_success:
+      stat_changes: { Per: 3, Ag: 2 }
+      add_tags: [Light-Fingered]
+      result_text: >
+        Nine scrip and a folding knife with a worn handle. You had the knife for years.
+        Nobody ever asked where it came from, because on that stair nobody ever asked
+        where anything came from.
+    on_failure:
+      stat_changes: { Fel: -2, Ag: 1 }
+      add_tags: [Light-Fingered, Known-To-Enforcers]
+      result_text: >
+        Somebody saw you crouched over it and drew the obvious conclusion, which was
+        wrong in the particulars and correct in general. Your name went into a
+        different book than the body's.
+  - id: walk_past
+    label: "Walk past it"
+    stat_changes: { WP: 1, Fel: -1 }
+    result_text: >
+      You took the stair, and the next day you took the stair again, and by the third
+      day your eyes did the thing eyes learn to do. It is a skill. It is one of the
+      first ones the Imperium gives you and it never asks for it back.
+terminal: false

@@ -1,0 +1,46 @@
+id: training_005_the_infraction
+stage: training
+tone: absurd
+requires: {}
+weight: 4
+text: >
+  Your kit inspection failed on a bootlace. Not a missing bootlace. A bootlace of the
+  correct length, correct colour and correct material, threaded from the wrong end. The
+  regulation covering this exists, is four lines long, and was written nine thousand
+  years ago by somebody who has been dead for most of that.
+choices:
+  - id: accept_the_charge
+    label: "Accept the charge without comment"
+    stat_changes: { WP: 3, T: 2 }
+    add_tags: [Rule-Follower]
+    result_text: >
+      Six hours of punishment drill in the rain for a bootlace. You did not complain,
+      because complaint is a second charge, and because at some point during hour four
+      you understood the actual curriculum: the bootlace is never the subject.
+  - id: quote_the_regulation
+    label: "Quote the regulation back at him"
+    stat_check: { stat: [Int, Fel], difficulty: -10 }
+    on_success:
+      stat_changes: { Int: 3, Fel: 2 }
+      add_tags: [Talks-His-Way-Through, Noted-Early]
+      result_text: >
+        You cited the four lines, then the amendment that supersedes two of them, which
+        the sergeant did not know existed. He checked. It did. The charge was withdrawn
+        and you were given a considerably worse job that carried no charge at all, which
+        is how the Imperium concedes an argument.
+    on_failure:
+      stat_changes: { Fel: -2, T: 2 }
+      add_tags: [Marked-Difficult]
+      result_text: >
+        You were three words into the amendment when he told you that a barrack-room
+        lawyer is a man who has decided which of the two of you is going to be doing the
+        drill. It was you. It was twelve hours instead of six.
+  - id: blame_someone
+    label: "Say another man laced it as a joke"
+    stat_changes: { Fel: 1, WP: -2 }
+    add_tags: [Informer]
+    result_text: >
+      It was plausible, because it had happened before to somebody else. He drew the
+      obvious conclusion and the other man did the drill. He never accused you of it,
+      then or later, which was worse than if he had.
+terminal: false

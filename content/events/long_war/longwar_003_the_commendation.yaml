@@ -1,0 +1,49 @@
+id: longwar_003_the_commendation
+stage: long_war
+tone: absurd
+requires: { tags_any: [Trench-Veteran, Squad-Trusted, Section-Leader] }
+weight: 4
+text: >
+  A commendation arrived for an action at a grid reference where you had never been, on
+  a date when the regiment had been in reserve, attributed to a man with your name and a
+  service number four digits off yours. The adjutant asked, in the tone of somebody who
+  had already decided, whether you wished to raise a correction.
+choices:
+  - id: take_the_medal
+    label: "Accept it"
+    stat_changes: { Fel: 3, WP: -1 }
+    add_tags: [Decorated]
+    result_text: >
+      You wore it. It got you a better cot, a marginally better ration scale and the
+      lifelong understanding that the Imperium's honours are a clerical output rather
+      than a moral one. The other man, whoever he was, presumably never noticed. He was
+      four digits away, which on that front is a distance measured in graves.
+  - id: correct_it
+    label: "Raise the correction"
+    stat_check: { stat: [Int, WP], difficulty: -10 }
+    on_success:
+      stat_changes: { Int: 3, WP: 4, Fel: 2 }
+      add_tags: [Rule-Follower, Noted-Early]
+      result_text: >
+        It took nine weeks, four forms and one genuinely alarming interview, and at the
+        end of it the medal went to the correct service number and a note went into your
+        file describing you as scrupulous. Scrupulous is a word that helps in exactly
+        one of the five branches and hurts in the other four.
+    on_failure:
+      stat_changes: { Fel: -2, WP: 2 }
+      add_tags: [Marked-Difficult]
+      result_text: >
+        The correction was logged as a claim, the claim was investigated, and the
+        investigation concluded that a man who refuses a commendation is a man with a
+        reason. There was no reason. Trying to explain that there was no reason took a
+        further six weeks and made it worse.
+  - id: give_it_away
+    label: "Give it to the man who actually earned it in your section"
+    stat_changes: { Fel: 4, WP: 2 }
+    add_tags: [Squad-Trusted]
+    result_text: >
+      You handed the box to a private who had pulled two men out of a collapsed bay in
+      the spring and been noted for it by nobody. He kept it in his kit and never wore
+      it and was extremely rude to you about the whole thing, and would have followed
+      you into anything afterwards.
+terminal: false

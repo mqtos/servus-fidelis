@@ -1,0 +1,44 @@
+id: childhood_010_the_scrip
+stage: childhood
+tone: absurd
+requires: {}
+weight: 3
+text: >
+  A clerical error credited your household with four hundred and six ration scrip, an
+  amount that did not exist in your district and could not be spent at any counter in it.
+  The notice advised that the balance was non-transferable, non-redeemable, and would be
+  audited in the ninth year. You were nine.
+choices:
+  - id: try_to_spend_it
+    label: "Try to spend it anyway"
+    stat_check: { stat: [Fel], difficulty: -10 }
+    on_success:
+      stat_changes: { Fel: 3, Int: 1 }
+      add_tags: [Talks-His-Way-Through]
+      result_text: >
+        You found a counter clerk near the end of a double shift who wanted the argument
+        to stop more than he wanted the ledger to balance. You came home with real flour.
+        Your mother asked no questions, which was itself a kind of instruction.
+    on_failure:
+      stat_changes: { Fel: -1, WP: 2 }
+      result_text: >
+        You were told, four times, by four people, each of whom was correct, that the
+        balance was non-redeemable. On the fourth telling you understood that the number
+        was not money. It was a number, and it belonged to the number's owners.
+  - id: report_the_error
+    label: "Report the error"
+    stat_changes: { WP: 3, Int: 2 }
+    add_tags: [Rule-Follower]
+    result_text: >
+      You queued for two hours to give the Administratum back something it had never
+      actually given you. The clerk stamped a form, thanked you in the standard phrasing,
+      and did not correct the balance. It was still there in the ninth year. Nobody audited it.
+  - id: keep_quiet
+    label: "Say nothing and wait for the audit"
+    stat_changes: { Per: 2, WP: 1 }
+    result_text: >
+      You spent six years quietly expecting men to come to the door about the flour you
+      had not eaten. Nobody came. You learned that the Imperium's attention is enormous,
+      indifferent, and almost never pointed at you, and that almost is doing a great deal
+      of work in that sentence.
+terminal: false

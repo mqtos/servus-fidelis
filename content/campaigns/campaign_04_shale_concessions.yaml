@@ -1,0 +1,28 @@
+id: campaign_04_shale_concessions
+name: "The Shale Concessions"
+region: region_gathral_sprawl
+order: 4
+threshold: 115
+runs_ceiling: 10
+world_type: mining
+position: { x: 36, y: 84 }
+flavor_intro: >
+  Nothing on this world belongs to the Imperium directly. The Shale Concessions are
+  worked under eleven separate charters, some of them older than the sector, and the
+  charter-holders have spent two hundred years suing one another over seam
+  boundaries. When the enemy landed, four of the eleven declared for it, on terms
+  reported to be quite favourable. The Guard has been asked to restore Imperial
+  authority without damaging any equipment still under lien.
+win_summary: >
+  Seven charters have been restored, three have been revoked and one is being argued
+  before a tribunal that will not sit for another sixty years. Output from the Shale
+  Concessions is back to eighty-four percent. The four charter-holders who declared
+  for the enemy were executed by the other seven before Imperial forces reached them,
+  which the Administratum has recorded as loyal initiative and the courts have
+  recorded as murder. Both records stand.
+loss_summary: >
+  The Concessions were not so much lost as sold. Nine of the eleven charter-holders
+  reached an arrangement, and the remaining two were bought out in a single afternoon
+  by parties whose names appear on no Imperial register. The seams are still worked,
+  the ore is still leaving, and none of it arrives anywhere the Munitorum can account
+  for. The tribunal date stands.

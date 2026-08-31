@@ -1,0 +1,47 @@
+id: deployment_001_the_drop
+stage: deployment
+tone: tense
+requires: {}
+weight: 6
+text: >
+  The transport took nine weeks to reach Gathral Secundus and eleven minutes to unload.
+  A sergeant walked the hold reading the order of march off a slate, and when he reached
+  the end he read it again from the top, because the front rank had already gone down
+  the ramp and the numbers no longer matched.
+choices:
+  - id: first_down_the_ramp
+    label: "Go down with the first rank"
+    stat_changes: { WP: 3, T: 2, Fel: 1 }
+    add_tags: [First-Ashore]
+    result_text: >
+      The air outside was thirty degrees colder than the hold and smelled of wet ash. You
+      were on Gathral Secundus for four minutes before anybody shot at anything, and you
+      spent all four of them looking at the sky, which was the last time you did that
+      voluntarily for eleven years.
+  - id: middle_of_the_column
+    label: "Wait for the middle of the column"
+    stat_changes: { Per: 3, WP: 1 }
+    result_text: >
+      Third rank, centre. Statistically the most survivable place in an unloading
+      column, a fact you had worked out on the transport and had the sense not to
+      explain to anyone. Nobody shot at the third rank. Somebody had shot at the first.
+  - id: help_with_the_crates
+    label: "Volunteer for the ammunition detail"
+    stat_check: { stat: [S, T], difficulty: 10 }
+    on_success:
+      stat_changes: { S: 3, T: 3 }
+      add_tags: [Squad-Trusted]
+      result_text: >
+        Six hours moving crates in the cold while the rest of the company dug in. It was
+        miserable and it was safe and it meant that the quartermaster's clerk knew your
+        name, which turned out over the following decade to be worth more than the
+        medal you did not get.
+    on_failure:
+      stat_changes: { T: 2, S: 1 }
+      add_tags: [Bad-Back]
+      result_text: >
+        You went down under a crate on the second hour and something in your lower back
+        made a decision it never revised. The medicae wrote "fit for duty" because the
+        alternative box on the form required a signature from an officer who was
+        already dead.
+terminal: false

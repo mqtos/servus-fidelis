@@ -1,0 +1,32 @@
+id: campaign_39_quillon_anchorage
+name: "The Quillon Anchorage"
+region: region_blank_chart
+order: 39
+threshold: 580
+runs_ceiling: 17
+world_type: void
+position: { x: 84, y: 49 }
+flavor_intro: >
+  The Quillon Anchorage services traffic the sector chart cannot account for. Hulls
+  arrive from bearings the chart does not name, and the station's Reconciliation
+  Office issues each of them a provisional designation, a berth and a tithe
+  assessment, in that order. The current designation number is 12,441. No master has
+  ever been asked where he came from, because there is no field for it on the form and
+  amending a form requires sector approval. The Anchorage has been contested for six
+  years and the Office has not missed a filing.
+win_summary: >
+  Quillon holds. The Reconciliation Office lost forty of its sixty clerks and posted
+  the backlog notice the same shift: assessments delayed, apologies to masters
+  awaiting berth. Designation 12,442 was issued four hours after the last boarding
+  action, to a hull nobody recognised, from a bearing that is still not on the chart.
+  It was assessed, tithed and released within the day. The Office considers the matter
+  closed and has requisitioned forty clerks, which is the number it lost and not the
+  number it needs.
+loss_summary: >
+  The Quillon Anchorage was lost over nine days, deck by deck, and the Reconciliation
+  Office was the last compartment on it still working. Its final filing was routine:
+  eleven berths occupied, one assessment outstanding, no irregularities to report.
+  Sector Command has struck the Anchorage from the traffic tables and issued no
+  replacement instruction, so the hulls that used it will go on arriving at a station
+  that is not there, from bearings that were never written down. Nobody has drafted
+  the notice. There is no field on the form for that either.

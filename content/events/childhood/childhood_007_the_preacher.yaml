@@ -1,0 +1,35 @@
+id: childhood_007_the_preacher
+stage: childhood
+tone: quiet
+requires: { tags_none: [Faith-Zealous, Faith-Wavering] }
+weight: 3
+text: >
+  An itinerant Ecclesiarchy preacher passed through, the kind who arrives every few
+  years to remind everyone that the Emperor watches, judges, and expects tithes paid on
+  time. He singled you out of the crowd, for reasons he did not explain, and asked you
+  one question: did you believe?
+choices:
+  - id: fervent_yes
+    label: "\"With everything I have.\""
+    stat_changes: { WP: 4, Fel: 1 }
+    add_tags: [Faith-Zealous]
+    result_text: >
+      He smiled the way men smile when they have found what they came for, and gave you
+      a small brass aquila with the plating worn off one wing. You have not taken it off
+      since, including on the two occasions when taking it off would have been sensible.
+  - id: uncertain
+    label: "\"I don't know.\""
+    stat_changes: { Int: 2, Per: 1 }
+    add_tags: [Faith-Wavering]
+    result_text: >
+      He did not seem angry, only tired, like a man who had heard this answer a thousand
+      times and expected to hear it a thousand more. "Good," he said, which was not what
+      you expected. "Doubt is honest. The Emperor has enough liars."
+  - id: silence
+    label: "Say nothing at all"
+    stat_changes: { WP: -1, Per: 3 }
+    result_text: >
+      You waited him out. He waited you out for a while too, then moved to the next
+      child without a word. You never found out what he would have said, and you have
+      thought about it more often than you would admit.
+terminal: false

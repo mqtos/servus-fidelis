@@ -1,0 +1,25 @@
+id: campaign_07_hesperine_forge
+name: "The Hesperine Forge Reclamation"
+region: region_hesperine_forgeworks
+order: 7
+threshold: 170
+runs_ceiling: 11
+world_type: forge
+position: { x: 21, y: 22 }
+flavor_intro: >
+  Hesperine still produces. That is the whole reason for the operation and the whole
+  problem with it. The forge has not answered a hail in two centuries, its output
+  goes somewhere nobody has established, and the Mechanicus has been very clear that
+  the machinery is to be recovered intact. The people operating it are not mentioned
+  in the order.
+win_summary: >
+  Hesperine's primary manufactory answered a Mechanicus hail for the first time in
+  two hundred and six years. What answered was not precisely a person. The forge is
+  producing to Imperial pattern again, output rated at sixty-one percent of its
+  pre-silence figures, and a full third of the reclamation force is listed as
+  remaining on-site indefinitely to keep it that way.
+loss_summary: >
+  The forge went quiet again eight days into the assault, in the specific way a thing
+  goes quiet when it has decided to. Orbital survey now reports no thermal signature,
+  no emissions, and no sign of the four regiments that went in. The Mechanicus has
+  reclassified Hesperine from asset to hazard and asked that nobody return to it.

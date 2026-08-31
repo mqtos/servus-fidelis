@@ -1,0 +1,29 @@
+id: campaign_14_pellun_threshing
+name: "The Threshing of Pellun"
+region: region_varn_belt
+order: 14
+threshold: 200
+runs_ceiling: 12
+world_type: agri
+position: { x: 47, y: 41 }
+flavor_intro: >
+  The harvest window on Pellun is nineteen days long and the landings began on the
+  fourth of them. Local statute forbids the conscription of combine drivers during
+  the window, and the Grain Assessor at Silo Forty has held to that statute through
+  two orbital bombardments and a written request from a colonel. Nine regiments are
+  now digging in around machinery that will not stop moving for them. The Munitorum
+  has classified the situation as a joint operation.
+win_summary: >
+  Pellun was cleared on the sixteenth day of the window with three days of harvest
+  still to run, and the harvest ran. Silo Forty took two direct hits and held its
+  grain, which the Assessor's office has recorded as a compliance success rather
+  than a defensive one. Eleven thousand soldiers spent the last of the window
+  loading hoppers because there was nobody else left to do it. The tithe went out
+  four percent short and the shortfall was attributed to weather.
+loss_summary: >
+  The window closed with sixty percent of Pellun's fields still standing and nobody
+  left to cut them. Silo Forty was breached on the eleventh day and the Grain
+  Assessor was still refusing conscription requests when the roof came in. The
+  Administratum has ruled that the year's tithe remains due, since the grain
+  demonstrably existed at the time of assessment. A collection team is being
+  organised.

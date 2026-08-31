@@ -1,0 +1,39 @@
+id: childhood_004_the_blessed_pump
+stage: childhood
+tone: absurd
+requires:
+  tags_any: [Hive-Born, Spire-Born]
+weight: 3
+text: >
+  The water pump on your level had not worked in six years, which the visiting
+  tech-adept explained was because its machine spirit was displeased. The prescribed
+  remedy was a litany of appeasement, sung at dawn, for as long as it took. Your
+  block had been singing to a broken pump for six years. On the two hundred and
+  eleventh morning of your own involvement, someone's grandmother hit it with a
+  wrench and it started working immediately.
+choices:
+  - id: credit_the_litany
+    label: "Agree that the litany worked"
+    stat_changes: { Fel: 3, WP: 2 }
+    add_tags: [Faith-Pragmatic]
+    result_text: >
+      The tech-adept recorded a successful appeasement and departed satisfied. The
+      grandmother did not appear in his report. She did not seem to mind, and the
+      water ran, and everyone got something they wanted.
+  - id: credit_the_wrench
+    label: "Point out that it was the wrench"
+    stat_changes: { Int: 3, Fel: -2 }
+    add_tags: [Mechanically-Minded]
+    result_text: >
+      He explained, patiently, that the wrench had been an instrument of the
+      Omnissiah's will and that you were too young to understand the distinction. You
+      are still not certain he was wrong. You did notice he took the wrench with him.
+  - id: take_the_wrench
+    label: "Quietly take the wrench"
+    stat_changes: { Ag: 2, Per: 2 }
+    add_tags: [Light-Fingered]
+    result_text: >
+      It was the finest tool anyone in your family had ever owned. You never said
+      where it came from, and it fixed a great many things over the following years,
+      none of them by singing.
+terminal: false

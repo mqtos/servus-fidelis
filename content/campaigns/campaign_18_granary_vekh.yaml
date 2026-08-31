@@ -1,0 +1,31 @@
+id: campaign_18_granary_vekh
+name: "Granary Station Vekh-9"
+region: region_varn_belt
+order: 18
+threshold: 250
+runs_ceiling: 13
+world_type: void
+position: { x: 55, y: 40 }
+flavor_intro: >
+  Vekh-9 is not a world. It is a hollow spar forty kilometres long that hangs above
+  the Belt's shipping lane and holds nine months of grain for four systems, kept cold
+  and kept still. Two hundred and six people work it in ordinary years. The boarding
+  actions began in the fourth month of storage, and the fighting is now taking place
+  inside sealed bulk holds where a single breach costs more calories than a division
+  of infantry is worth. Weapons discharge in the holds is prohibited by standing
+  order. The order has been read aloud to every regiment and obeyed by none of them.
+win_summary: >
+  Vekh-9 is secure and eleven of its forty-one holds are open to vacuum. The grain
+  in those holds is technically recoverable and the Administratum has authorised
+  recovery, which means someone is going to be told to go and get it. Station staff
+  losses came to a hundred and ninety of two hundred and six, and the survivors have
+  been retained on station because there is no replacement crew within six months
+  transit. Their contracts have been extended automatically. Nobody asked them.
+loss_summary: >
+  The station was scuttled from the control spine rather than surrendered, which was
+  the correct decision and which nobody has been thanked for. Nine months of grain
+  for four systems is now spreading along the shipping lane in a cloud eleven hundred
+  kilometres across, cold enough to keep and too dispersed to collect. Ration
+  protocols for the Belt have moved to emergency footing. The Munitorum has issued a
+  notice reminding all stations that stored tithe remains the property of the
+  Imperium regardless of its physical state.

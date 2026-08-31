@@ -1,0 +1,31 @@
+id: campaign_33_ekkard_wold
+name: "Ekkard Wold"
+region: region_silent_marches
+order: 33
+threshold: 410
+runs_ceiling: 15
+world_type: feral
+position: { x: 74, y: 57.5 }
+flavor_intro: >
+  A survey expedition put a garrison tower on Ekkard Wold four decades ago and then
+  the sector forgot it, as the sector forgets most things out here. The tower is still
+  manned. The men in it are the grandsons of the men who built it, they have never
+  seen a void ship, and when the relief column came up the valley they issued the
+  challenge and accepted the countersign from a codebook that expired thirty-eight
+  years ago. Nobody in the column knew the countersign. One of the older sergeants
+  guessed it, because his own regiment had used the same book, and this is the only
+  reason the meeting was not a firefight.
+win_summary: >
+  Ekkard Wold is held, and held largely by the tower garrison, who fought the campaign
+  under standing orders issued by a colonel who has been dead since before most of
+  them were born. The Munitorum has ruled that their service counts and that back pay
+  is owed, then ruled that back pay cannot be issued to men with no service numbers,
+  and has referred the matter to itself. The tower has been resupplied. Its commander
+  asked for a current codebook and was told one would follow.
+loss_summary: >
+  The last message from Ekkard Wold was the challenge, transmitted on a wavelength the
+  fleet no longer monitors, repeated at the correct interval for nine days and then
+  not repeated. What the tower was challenging is not known. The relief was two months
+  out and turned back on a fuel calculation. Sector command has entered the garrison
+  as lost, which required first entering them as present, which took longer than the
+  siege did.

@@ -1,0 +1,28 @@
+id: campaign_02_orvine_tertius
+name: "Orvine Tertius"
+region: region_gathral_sprawl
+order: 2
+threshold: 110
+runs_ceiling: 10
+world_type: hive
+position: { x: 22, y: 51 }
+flavor_intro: >
+  The fighting on Orvine Tertius is about water. The hive draws from a single aquifer
+  under the Vantry Flats, and whoever holds the pumping stations holds everything
+  above them, which the enemy worked out four years before sector command did. Nine
+  of the eleven stations are currently out of Imperial hands. The Departmento
+  Munitorum has responded by revising the ration tables and issuing a devotional
+  pamphlet on thirst.
+win_summary: >
+  All eleven pumping stations are back under Imperial control, though four of them no
+  longer pump. Orvine Tertius is rated compliant and its water ration has been
+  restored to two litres per person per day, down from the pre-war figure of five.
+  The Administratum considers this a permanent adjustment rather than an emergency
+  one. A commendation has been entered for the officer who ordered the Vantry Flats
+  flooded, and a separate inquiry has been opened into the same order.
+loss_summary: >
+  Orvine Tertius did not surrender, and there is no record of it being taken. The
+  aquifer was fouled at some point in the ninth month and the hive simply stopped
+  reporting. Two relief convoys were dispatched before someone in the sector office
+  read the survey and cancelled the third. The world remains on the tithe roll,
+  because removing a world from the tithe roll requires a signature from Terra.

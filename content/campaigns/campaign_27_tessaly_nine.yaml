@@ -1,0 +1,29 @@
+id: campaign_27_tessaly_nine
+name: "Tessaly Nine"
+region: region_kolvar_deeps
+order: 27
+threshold: 355
+runs_ceiling: 14
+world_type: mining
+position: { x: 65, y: 67 }
+flavor_intro: >
+  There is nothing on this world except flux ore and the people who were brought here
+  to take it out of the ground. Shifts on Tessaly Nine are not measured in hours but
+  in tonnage, so a bad seam simply means a longer day, and an enemy assault on a
+  cutting face is logged as an unpaid interruption. Every soul on the surface is
+  indentured to the Kessimer Combine against transport costs incurred by their
+  great-grandparents. The Guard has been deployed to protect the extraction schedule.
+  Nobody has said protect from what, because the answer changes.
+win_summary: >
+  Tessaly Nine met eighty-one percent of quota during the contested period, which the
+  Kessimer Combine describes in its filings as resilient. The world is secure. The
+  indentures of the dead have passed to their surviving relatives under the standard
+  inheritance clause, so the debt is intact even where the debtor is not. Combine
+  auditors arrived nine days after the fighting stopped and have raised concerns about
+  ordnance craters in the western cut, which will need to be filled before assessment.
+loss_summary: >
+  The seam is lost and the Kessimer Combine has invoked force majeure, which suspends
+  its obligation to feed anyone still on the surface. Six hundred thousand indentured
+  workers remain there. The combine's position, stated in writing and not since
+  withdrawn, is that they are inventory rather than personnel and that inventory
+  losses are covered. Sector command has noted the world as enemy-held and moved on.

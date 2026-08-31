@@ -1,0 +1,29 @@
+id: campaign_06_ninth_cordon
+name: "The Ninth Cordon"
+region: region_gathral_sprawl
+order: 6
+threshold: 125
+runs_ceiling: 10
+world_type: void
+position: { x: 31, y: 66 }
+flavor_intro: >
+  Six hive worlds packed this close generate more traffic than any of them can
+  police, so the Sprawl is ringed by cordon stations, numbered outward. The Ninth is
+  the last one still crewed. It was built to inspect cargo manifests and now holds a
+  fixed line against boarding actions with an armoury it was never issued.
+  Requisition requests from the Ninth have been outstanding for thirty-one years, and
+  the standing reply is that the station's classification does not permit heavy
+  weapons.
+win_summary: >
+  The Ninth Cordon holds and the Sprawl's outer approaches are clear for the first
+  time in a decade. Boarding losses across the station's four decks came to eleven
+  hundred, which exceeds its rated complement by three hundred, a discrepancy the
+  Munitorum has queried twice and not pursued. Its classification remains unchanged.
+  The outstanding requisition has been closed on the grounds that the emergency has
+  passed.
+loss_summary: >
+  Nothing dramatic happened to the Ninth Cordon. It ran out of ammunition on a
+  schedule that was predicted, recorded and circulated eight months in advance, and
+  then it was boarded. The Sprawl's outer approaches are open. Sector command has
+  begun referring to the Eighth Cordon, derelict since the founding, as the primary
+  line.

@@ -1,0 +1,25 @@
+id: campaign_37_cadence_gate
+name: "Cadence Gate"
+region: region_blank_chart
+order: 37
+threshold: 520
+runs_ceiling: 16
+world_type: void
+position: { x: 86, y: 33 }
+flavor_intro: >
+  Everything that enters this sector passes Cadence Gate, and everything that leaves
+  it does too. The station has changed hands four times in six hundred years and has
+  never once been evacuated, because there is nowhere on it that is not the front and
+  nowhere off it that anyone can reach. This is the last name on the sector chart.
+  After it the chart is simply blank, which is not the same as saying there is
+  nothing there.
+win_summary: >
+  Cadence Gate holds. The sector's approaches are Imperial for the first time in four
+  generations, and the traffic has already resumed, indifferent and enormous, as
+  though it had merely been delayed. The station's own dead were not recovered. There
+  is no ground on Cadence Gate to put them in.
+loss_summary: >
+  Cadence Gate was lost with all hands and both approaches. The sector is now closed
+  at its own doorway: whatever remains inside it will hold or fall without
+  reinforcement, resupply or word from anyone, for as long as that takes. The war
+  does not end here. It simply stops being watched.

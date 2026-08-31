@@ -1,0 +1,22 @@
+# The sector these campaigns belong to. Shown as the title of the Sector Status chart.
+sector_name: "The Aurelian Reach"
+
+# Contribution weight per ending category, Content Bible 7.5. Global rather than
+# per-campaign: the same death is worth the same everywhere in the sector.
+#
+# Tuned down hard from the Bible's illustrative values, which paired a threshold of 1000
+# with these weights and would have taken roughly twenty-five runs to resolve one
+# campaign. The point of the layer is that a life is a small contribution to something
+# that visibly moves, and nothing visibly moves at twenty-five runs a world.
+#
+# Disgrace contributes nothing and corruption subtracts, per GDD 10.2. Both are survivable
+# for the sector, but a run of them will walk a campaign into its runs_ceiling and lose it,
+# which is the intended pressure.
+contribution_weights:
+  pointless_death: 10
+  glorious_death: 25
+  quiet_survival: 40
+  disgrace: 0
+  corruption: -15
+  legend: 100
+  ascended: 400

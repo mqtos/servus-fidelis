@@ -1,0 +1,9 @@
+id: region_silent_marches
+name: "The Silent Marches"
+order: 6
+min_player_level: 50
+bounds: { x: 61, y: 32, width: 20, height: 29 }
+survey: >
+  Worlds the sector stopped hearing from. Some are feral and were never wired for a vox in
+  the first place. Some had a vox and used it, up to a point. The Corps marks the whole
+  band as unsurveyed rather than write down which is which.

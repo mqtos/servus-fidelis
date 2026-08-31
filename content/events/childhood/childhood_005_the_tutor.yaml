@@ -1,0 +1,36 @@
+id: childhood_005_the_tutor
+stage: childhood
+tone: quiet
+requires: { tags_any: [Spire-Born] }
+weight: 3
+text: >
+  Your family retained a tutor, a thin man on a renewable contract, to teach you the
+  approved history of the sector. Somewhere around the fourth century of it he stopped
+  reading aloud, put a finger on a paragraph, and said: "This is not what happened. Do
+  you want the version that is true, or the version they will examine you on?"
+choices:
+  - id: the_true_version
+    label: "\"The true one.\""
+    stat_changes: { Int: 4, WP: -1 }
+    add_tags: [Well-Read, Dangerous-Questions]
+    result_text: >
+      He talked for an hour and never wrote any of it down. Two months later his
+      contract was not renewed and nobody explained why. You kept the hour. It has been
+      useful roughly as often as it has been a liability.
+  - id: the_examined_version
+    label: "\"The one on the exam.\""
+    stat_changes: { Int: 2, Fel: 2 }
+    add_tags: [Well-Read]
+    result_text: >
+      He nodded, not disappointed exactly, and read the approved paragraph again in a
+      flat voice. You scored in the upper decile. He was right that it would be
+      examined, and you were right that it would be enough.
+  - id: report_him
+    label: "Mention it to your father"
+    stat_changes: { Fel: 3, WP: 2, Int: -1 }
+    add_tags: [Reported-Someone]
+    result_text: >
+      Your father thanked you with an odd formality, as though you had joined something.
+      The tutor was gone before the next lesson. You do not remember his name now, only
+      that he had ink on the side of his hand, and that you noticed it that day.
+terminal: false

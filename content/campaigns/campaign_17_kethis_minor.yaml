@@ -1,0 +1,31 @@
+id: campaign_17_kethis_minor
+name: "The Pacification of Kethis Minor"
+region: region_varn_belt
+order: 17
+threshold: 240
+runs_ceiling: 13
+world_type: feral
+position: { x: 38, y: 63 }
+flavor_intro: >
+  Kethis Minor is where the Belt keeps its meat. Eleven clans drive four million
+  head of grazing stock across the southern plain twice a year, and the Administratum
+  has never assessed them for tithe because no census team has ever found the same
+  clan in the same place twice. The enemy landed directly across the spring drive
+  route. The clans did not stop the drive, and the campaign is now being fought
+  around a moving herd that neither side is willing to lose. Munitorum liaison
+  describes the clans as cooperative, which means they have not shot at anyone yet.
+win_summary: >
+  The plain is clear and the drive reached the northern pens six weeks late with
+  slightly under half its stock. Four of the eleven clans no longer exist as separate
+  entities and have folded into the others, which the liaison office has recorded as
+  an administrative simplification. The clans accepted rifles, ammunition and a
+  formal Imperial charter of grazing rights, and then asked whether the charter meant
+  they were now on the tithe rolls. They were told it did. They kept the rifles
+  anyway.
+loss_summary: >
+  What was left of the herd went over the Ashwater escarpment on the ninth day,
+  driven by the clans rather than surrendered, and roughly nine hundred thousand
+  animals went with it. Kethis Minor has no orbital defences, no cities and now no
+  reason for anyone to return to it. The Belt's protein allocation has been reduced
+  by a figure the Administratum has published without comment. The clans were never
+  on any roll, so no casualty return was filed for them.

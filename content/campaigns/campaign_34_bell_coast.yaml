@@ -1,0 +1,31 @@
+id: campaign_34_bell_coast
+name: "The Bell Coast"
+region: region_silent_marches
+order: 34
+threshold: 450
+runs_ceiling: 16
+world_type: dead
+position: { x: 70.5, y: 59.5 }
+flavor_intro: >
+  The sea here dried some time in the last two centuries and the cities that lined it
+  are now a terrace of empty terminals looking out over four hundred kilometres of
+  salt. The evacuation sirens were built into the harbour walls and wired to
+  geothermal taps, so they still sound at the sixth hour, every day, along the whole
+  coast, to nobody. Guardsmen posted here learn to sleep through it in about a week.
+  The fighting is over the tap heads, which are the only power on the continent. The
+  sirens are on the same circuit and cannot be isolated, and the enemy has not turned
+  them off either.
+win_summary: >
+  The tap heads on the Bell Coast are Imperial and the continent has power for the
+  first time in a lifetime, most of which is being used to run the sirens. An
+  engineering survey has established that the alarm circuit can be cut at the harbour
+  wall in nine places for a cost of roughly two days' labour. The order has not been
+  given. Three separate officers have declined to give it and none has explained why,
+  and the sixth hour continues to be observed across four hundred kilometres of dry
+  seabed.
+loss_summary: >
+  The Bell Coast is lost and the taps with it. The withdrawal was clean, which is the
+  word used when there was nobody left to leave behind, and the last transports lifted
+  at the fifth hour precisely so that the crews would be clear before the sirens went.
+  Sector command has recorded the loss of a strategic power asset. The world was
+  already dead, so nothing else about the entry required amendment.

@@ -1,0 +1,30 @@
+id: campaign_29_freehold_tarrant
+name: "Freehold Tarrant"
+region: region_kolvar_deeps
+order: 29
+threshold: 365
+runs_ceiling: 15
+world_type: void
+position: { x: 74, y: 84 }
+flavor_intro: >
+  Tarrant Station holds no deed and never has. It was assembled four centuries ago out of
+  three condemned ore haulers by people who had been laid off between them, and it has
+  since declared itself a freehold, a term with no meaning in Imperial law and
+  considerable meaning on Ring Six. The combines want it back because it sits across
+  the only stable approach to their claims. The station's own militia has fought off
+  two combine levies and one tax assessor. It is now fighting something else, and has
+  asked the Imperium for help in a document that is otherwise a bill.
+win_summary: >
+  Ring Six was retaken compartment by compartment over sixteen days and Tarrant Station
+  remains, in its own view, free. In the Administratum's view it has been brought into
+  compliance for the first time. Both readings are being maintained simultaneously
+  because neither party benefits from resolving it. The station has invoiced the
+  relieving fleet for docking, atmosphere and berth wear, and the fleet has paid,
+  which sector command considers the more troubling precedent.
+loss_summary: >
+  Tarrant Station was lost with its militia, its founders' charter and the only surviving
+  chart of the deep approach. The combines have expressed regret and applied to have
+  the wreck declared salvage, which would settle four hundred years of argument in
+  their favour at last. The application is proceeding. Nobody has filed for the eleven
+  thousand people who lived on Ring Six, because a freehold has no registry and
+  therefore no one on it was ever formally alive.

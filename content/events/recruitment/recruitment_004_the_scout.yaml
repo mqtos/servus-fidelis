@@ -1,0 +1,45 @@
+# Ultra-rare Astartes seed, per Content Bible 4. Strict stat gate and the lowest weight
+# in the stage, so most players will never see it. Sets a tag only: the Aspirant arc
+# itself is Phase 2 work.
+id: recruitment_004_the_scout
+stage: recruitment
+tone: tense
+# Unlike the Inquisition seed, rarity here is carried by the weight rather than the
+# gate: qualifying is achievable on a feral-world build, drawing it is roughly 1 in 11.
+requires: { stat_min: { S: 34, T: 34, WP: 34 } }
+weight: 1
+text: >
+  Something was standing at the back of the processing hall that the Munitorum officials
+  were pretending not to look at. It was too tall and too still and its armour had no
+  regimental mark on it anywhere. When the tally reached your line it took one step
+  forward, which was the only step it took all day, and everybody in the hall heard it.
+choices:
+  - id: meet_its_eyes
+    label: "Look up at it"
+    stat_check: { stat: [WP], difficulty: -20 }
+    on_success:
+      stat_changes: { WP: 4, T: 2 }
+      add_tags: [Aspirant-Marked, Noted-Early]
+      set_regiment: "the 114th Gathral Rifles"
+      result_text: >
+        You held the look for as long as it lasted, which was not long. It said nothing.
+        A serf beside it wrote a single line in a ledger and turned the page. You were
+        stamped into the 114th Gathral Rifles that afternoon with everyone else, and for
+        eleven years nothing came of it, and then something did.
+    on_failure:
+      stat_changes: { WP: 2 }
+      set_regiment: "the 114th Gathral Rifles"
+      result_text: >
+        You got your chin up and your eyes as far as the chest plate, and then your body
+        made the decision for you and you looked at the floor. The serf wrote nothing.
+        The page did not turn. You went to the 114th Gathral Rifles and that was the
+        whole of it.
+  - id: stay_down
+    label: "Keep your eyes on the floor"
+    stat_changes: { WP: 1, Per: 2 }
+    set_regiment: "the 114th Gathral Rifles"
+    result_text: >
+      You did the sensible thing, which was to be extremely uninteresting for ninety
+      seconds. It worked. Whatever it was there for, it was not you, and you have spent
+      an unreasonable amount of your life since wondering whether that was true.
+terminal: false

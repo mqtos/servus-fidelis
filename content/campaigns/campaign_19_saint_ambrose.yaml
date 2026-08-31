@@ -1,0 +1,24 @@
+id: campaign_19_saint_ambrose
+name: "The Relief of Saint Ambrose Landing"
+region: region_ambrosian_reach
+order: 19
+threshold: 270
+runs_ceiling: 13
+world_type: shrine
+position: { x: 57.5, y: 15 }
+flavor_intro: >
+  A shrine world of no strategic value whatsoever, holding the remains of a saint
+  that three separate confessional authorities have described as the most important
+  object in the sector. The Departmento Munitorum has assessed the military case for
+  the relief of Saint Ambrose Landing as negligible and has assigned nine regiments
+  to it, because the case that matters here was never military.
+win_summary: >
+  The reliquary was recovered intact, which the Ecclesiarchy has declared a miracle,
+  and the pilgrim roads reopened within the year. Attendance is up. The nine
+  regiments that made it possible are not mentioned in the sermon, on the grounds
+  that the sermon is about the saint.
+loss_summary: >
+  Saint Ambrose Landing was lost with the reliquary still inside it. Three
+  confessional authorities have issued three separate accounts of what this means,
+  and all three agree that it was not the fault of the Ecclesiarchy. The pilgrim
+  roads now end at a cordon. People still walk them to the cordon and stand there.

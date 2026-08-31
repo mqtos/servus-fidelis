@@ -1,0 +1,37 @@
+id: childhood_001_the_census
+stage: childhood
+tone: quiet
+requires: {}
+weight: 4
+text: >
+  The Administratum adept came through every fourth year to count the living and
+  strike out the dead. He worked from a ledger so thick he carried it on a strap, and
+  he did not look up when he asked your name. Your mother had told you to say you
+  were older than you were. She did not explain why, and you had learned not to ask
+  about the things she did not explain.
+choices:
+  - id: claim_the_extra_years
+    label: "Say you were older"
+    stat_changes: { T: 2, Fel: 2 }
+    add_tags: [Falsified-Record]
+    result_text: >
+      The adept wrote it down without checking. You were put on the labour rolls a
+      full year before the other children, which your mother seemed to consider a
+      victory. Your spine disagreed.
+  - id: tell_the_truth
+    label: "Give your real age"
+    stat_changes: { WP: 2 }
+    add_tags: [Clean-Record]
+    result_text: >
+      He wrote the true number, stamped it twice, and moved on. Somewhere in a spire
+      archive that number is still correct. It is very nearly the only thing about
+      you that is.
+  - id: ask_what_its_for
+    label: "Ask what the ledger is for"
+    stat_changes: { Int: 3, Fel: -1 }
+    add_tags: [Asks-Questions]
+    result_text: >
+      He looked up for the first time. "It is for knowing how many of you there are,"
+      he said, "so that afterwards we know how many of you there were." Then he went
+      back to his writing. You thought about that sentence for years.
+terminal: false

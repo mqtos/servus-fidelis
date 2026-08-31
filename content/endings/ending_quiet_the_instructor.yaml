@@ -1,0 +1,12 @@
+id: ending_quiet_the_instructor
+category: quiet_survival
+tone: quiet
+requires: { tags_any: [The-Old-Man, Trench-Veteran, Rotated-Out, Section-Leader] }
+weight: 5
+headline: "RETURNED TO DEPOT: INSTRUCTIONAL DUTIES"
+summary_template: >
+  {name}, {final_rank}, {regiment}, rotated out at {age} and posted to a training depot,
+  because the establishment requires instructors and instructors are drawn from men who
+  have demonstrably survived. You taught the same eleven things for the rest of your
+  service. Most of the men you taught died anyway. A measurable number did not, and you
+  were never told which, and you went on teaching the eleven things.

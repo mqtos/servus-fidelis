@@ -1,0 +1,56 @@
+id: longwar_002_the_relief_column
+stage: long_war
+tone: tense
+requires: {}
+weight: 5
+text: >
+  The relief column was nine vehicles and it was four days late, which everyone had
+  expected, and it stopped eleven kilometres short at a bridge that the maps described as
+  intact. The maps were nine years old. The officer commanding had been on Gathral
+  Secundus for six days.
+choices:
+  - id: tell_him
+    label: "Tell the officer the maps are wrong"
+    stat_check: { stat: [Fel, Int], difficulty: 0 }
+    on_success:
+      stat_changes: { Int: 3, Fel: 3 }
+      add_tags: [Noted-Early, Squad-Trusted]
+      result_text: >
+        He listened, which was not guaranteed, and turned the column onto the ford at
+        Kell that you had crossed eleven times. Six hours lost, nine vehicles saved. He
+        wrote your name down. Officers who write names down are either the best thing
+        that can happen to you or the second worst.
+    on_failure:
+      stat_changes: { Fel: -2, WP: 2, Per: 2 }
+      result_text: >
+        He explained to you, with reference to the map, that the map was a map. Two
+        vehicles went into the river and one man drowned inside one of them, and the
+        column used the ford at Kell in the morning, and no part of the log records that
+        anybody had said anything beforehand.
+  - id: go_and_look
+    label: "Go and check the bridge yourself"
+    stat_check: { stat: [Per, Ag], difficulty: -10 }
+    on_success:
+      stat_changes: { Per: 4, Ag: 2 }
+      add_tags: [Scout-Eye]
+      result_text: >
+        Two spans gone and the third undercut, visible from the bank if you knew where
+        to stand and invisible from the road. You reported it as fact rather than
+        opinion, which is the entire difference, and the column took the ford without
+        anybody having to be persuaded of anything.
+    on_failure:
+      stat_changes: { T: 2, WP: 1 }
+      add_tags: [Bad-Back]
+      result_text: >
+        You went down the bank in the dark, which was the correct decision executed
+        badly, and spent eight minutes in the river before anyone noticed. You did
+        establish that the bridge was gone. You established it with your whole body.
+  - id: say_nothing
+    label: "It is not your column"
+    stat_changes: { WP: 2, Per: 1, Fel: -1 }
+    result_text: >
+      You were a corporal at most and he had staff braid, and the Guard is a structure
+      designed so that this exchange does not happen. Two vehicles went into the river.
+      You have never been able to decide whether the structure or you were at fault, and
+      the structure has never wondered about it at all.
+terminal: false

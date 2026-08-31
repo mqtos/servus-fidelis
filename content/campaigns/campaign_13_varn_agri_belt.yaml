@@ -1,0 +1,24 @@
+id: campaign_13_varn_agri_belt
+name: "The Varn Agri-Belt"
+region: region_varn_belt
+order: 13
+threshold: 210
+runs_ceiling: 12
+world_type: agri
+position: { x: 50, y: 32 }
+flavor_intro: >
+  Varn feeds four systems, which makes it the least defensible and most necessary
+  world in the sector. There is nothing here to hold. It is nine thousand kilometres
+  of grain under an open sky, and the order is to hold it anyway, because the
+  alternative is explaining to four systems why they are hungry.
+win_summary: >
+  The harvest went out on schedule. Sixty-two percent of the belt burned during the
+  fighting and the rest was brought in by soldiers who had never seen a field before
+  and will never see one again. Four systems ate this year. None of them were told
+  who by.
+loss_summary: >
+  Varn burned from the equator outward over nine days, which is longer than anyone
+  expected and not long enough to matter. The tithe for four systems has been
+  reassessed against reserves that were calculated on the assumption Varn would
+  always be there. Ration protocols are being revised sector-wide. The revision is
+  not expected to be popular.

@@ -1,0 +1,9 @@
+id: region_hesperine_forgeworks
+name: "The Hesperine Forgeworks"
+order: 2
+min_player_level: 8
+bounds: { x: 12, y: 9, width: 22, height: 29 }
+survey: >
+  Forge worlds and the smelter moons that feed them. The Mechanicus files its own surveys
+  and does not share them, so the Cartography Corps holds an outline, a tithe figure and
+  a note that the outline is probably out of date.

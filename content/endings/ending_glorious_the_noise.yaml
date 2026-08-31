@@ -1,0 +1,12 @@
+id: ending_glorious_the_noise
+category: glorious_death
+tone: grim
+requires: {}
+weight: 2
+headline: "KILLED IN ACTION: GALLANTRY NOTED"
+summary_template: >
+  {name}, {final_rank}, {regiment}, died at {age_at_death} doing the arithmetic that
+  everyone in the Guard eventually does once, and getting the answer that means the men
+  behind you get to the parapet. Two of them did. The Munitorum records the outcome, not
+  the arithmetic. Your name is on the roll at Gathral and it is spelled correctly, which
+  is more than the reassignment order managed.

@@ -1,0 +1,68 @@
+# The Feral/Hive variant of the fork. Same function as the draft, different fiction:
+# no paperwork, no tally-servitor, and the regiment gets a worse name.
+id: recruitment_002_the_press_gang
+stage: recruitment
+tone: grim
+requires: { tags_any: [Feral-World, Known-To-Enforcers, Light-Fingered] }
+weight: 6
+text: >
+  There was no notice and no tally. A lander came down on the flats at night with its
+  lamps off, and men who did not speak your language put a rope line between two poles
+  and started filling it. The Imperium's paperwork would catch up later. It always does,
+  and it is never in your favour when it arrives.
+choices:
+  - id: line_up
+    label: "Take your place on the rope"
+    stat_changes: { T: 2, WP: 1 }
+    set_regiment: "the 9th Gathral Levy"
+    result_text: >
+      You stood where you were put. Somewhere over the next four days you stopped being
+      a person from somewhere and became a number in the 9th Gathral Levy, a unit raised
+      by rope, named by a clerk who had never landed.
+  - id: fight
+    label: "Fight the man holding the rope"
+    stat_check: { stat: [S, WS], difficulty: -10 }
+    on_critical_success:
+      stat_changes: { S: 4, WS: 3, Fel: 2 }
+      add_tags: [Noted-Early, Hard-Case]
+      set_regiment: "the 9th Gathral Levy"
+      result_text: >
+        You put him down in front of forty people and it took one hit. The officer who
+        watched it happen did not have you beaten. He had you moved to the front of the
+        line and made a small mark against your name, which is how careers begin in the
+        Guard: badly, and in the right direction.
+    on_success:
+      stat_changes: { S: 2, T: 2 }
+      add_tags: [Hard-Case]
+      set_regiment: "the 9th Gathral Levy"
+      result_text: >
+        You hurt him and four of his friends hurt you back, and then everyone got on the
+        lander anyway. Your ribs took a month. The men on the rope beside you remembered
+        it for longer than that.
+    on_failure:
+      stat_changes: { T: 3, Fel: -2 }
+      add_tags: [Hard-Case, Marked-Difficult]
+      set_regiment: "the 9th Gathral Levy"
+      result_text: >
+        You were beaten unconscious and woke in the hold with your hands bound and your
+        name on the manifest regardless. The lesson was not that fighting is wrong. It
+        was that it changes nothing about the manifest.
+    on_critical_failure:
+      terminal: true
+      ending_category: pointless_death
+      add_tags: [Never-Enlisted]
+      result_text: >
+        He was quicker than he looked and he did not use the club. Your body was left on
+        the flats because loading it would have taken two men and a stretcher, and the
+        lander was on a schedule. Your name was never entered anywhere at all.
+  - id: sell_the_others
+    label: "Tell them who else is worth taking"
+    stat_changes: { Fel: 3, WP: -2 }
+    add_tags: [Informer, Noted-Early]
+    set_regiment: "the 9th Gathral Levy"
+    result_text: >
+      You pointed out the strong ones, the ones hiding in the drainage, and the man who
+      had a lasgun he should not have had. They gave you a blanket and a place near the
+      hatch. Four of the people you named were on the same lander. Two of them worked
+      out that it was you.
+terminal: false

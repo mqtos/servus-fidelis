@@ -1,0 +1,27 @@
+id: campaign_11_slagfall_station
+name: "Slagfall Station"
+region: region_hesperine_forgeworks
+order: 11
+threshold: 175
+runs_ceiling: 12
+world_type: void
+position: { x: 31, y: 12 }
+flavor_intro: >
+  Slagfall was built to catch what the smelter moons throw off, and it has been doing
+  that so long that the station is now mostly made of it. Eight hundred thousand
+  people live in the accreted layers, none of them on any register, all of them
+  working. When the enemy took the docking spine, the Mechanicus assessed the loss at
+  zero. The station is not an asset. It is a by-product with a name.
+win_summary: >
+  The docking spine is retaken and Slagfall's catchment is operating within
+  tolerance. The Mechanicus has reconfirmed the station's value at zero and has
+  therefore declined to fund repairs, garrison or medical support. A Guard
+  quartermaster entered the eight hundred thousand residents onto a supply roll under
+  the heading of local labour, and is currently under investigation for it. The
+  residents are still being fed while the investigation proceeds.
+loss_summary: >
+  Slagfall continues to catch slag. That was never going to stop, whoever holds the
+  spine, and it has not. The Mechanicus records no loss and has issued no order
+  regarding the station's population, since it has never acknowledged one. The two
+  regiments that fought there are listed as expended against an objective of nil
+  assessed value, which is the only entry the form permits.

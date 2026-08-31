@@ -1,0 +1,38 @@
+id: childhood_009_the_quota_winter
+stage: childhood
+tone: grim
+requires:
+  tags_none: [Spire-Born]
+weight: 3
+text: >
+  The tithe rose by a third that year and the ration allocation did not rise with it.
+  The Administratum called this a temporary adjustment. It lasted nineteen months. By
+  the end of it your family was three people instead of five, and nobody on your level
+  used the word famine, because using it would have meant somebody had failed to
+  prevent one.
+choices:
+  - id: take_more
+    label: "Take more than your share"
+    stat_changes: { T: 3, Fel: -4 }
+    add_tags: [Ate-First]
+    result_text: >
+      You ate. You have never established which of the two you ate instead of, and
+      you have decided, deliberately and repeatedly across many years, not to work
+      it out.
+  - id: give_it_away
+    label: "Give your ration away"
+    stat_changes: { WP: 4, T: -2 }
+    add_tags: [Gave-It-Away]
+    result_text: >
+      The person you gave it to died anyway, eleven days later, of something a ration
+      would not have fixed. You have never regretted it. You have also never told
+      anyone.
+  - id: extra_shifts
+    label: "Take extra shifts in the recyc-stacks"
+    stat_changes: { S: 2, T: 2, Per: -2 }
+    add_tags: [Lung-Damage]
+    result_text: >
+      The extra hours bought an extra half-ration. The air in the stacks bought you a
+      cough that you would carry into a Guard medical inspection eleven years later,
+      where it would be recorded, considered, and ignored.
+terminal: false

@@ -1,0 +1,9 @@
+id: region_gathral_sprawl
+name: "The Gathral Sprawl"
+order: 1
+min_player_level: 1
+bounds: { x: 6, y: 44, width: 38, height: 49 }
+survey: >
+  Six hive worlds and their tithe traffic, close enough together that the Administratum
+  files them as one account. This is where the sector's people come from, and where most
+  of them are spent.

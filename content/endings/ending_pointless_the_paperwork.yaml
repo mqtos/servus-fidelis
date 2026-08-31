@@ -1,0 +1,14 @@
+id: ending_pointless_the_paperwork
+category: pointless_death
+tone: absurd
+requires:
+  tags_any: [Marked-Difficult, Known-To-Enforcers, Poor-Shot, Flinches]
+  tags_none: [Never-Enlisted]
+weight: 3
+headline: "KILLED IN ACTION: FILE CLOSED"
+summary_template: >
+  {name}, {final_rank}, {regiment}, died at {age_at_death}, and the notification was
+  delayed nine weeks by a discrepancy between two service numbers that a clerk
+  eventually resolved by choosing one. The file contains three annotations about your
+  conduct and none about your death. It is, on the whole, a longer file than most, and
+  that is the only unusual thing in it.

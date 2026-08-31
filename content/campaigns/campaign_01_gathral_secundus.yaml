@@ -1,0 +1,25 @@
+id: campaign_01_gathral_secundus
+name: "The Siege of Gathral Secundus"
+region: region_gathral_sprawl
+order: 1
+threshold: 120
+runs_ceiling: 10
+world_type: hive
+position: { x: 15, y: 64 }
+flavor_intro: >
+  Gathral Secundus has been under siege for eleven years. The hive's outer spires
+  fell in the third year and nobody has agreed since on whether the enemy holds them
+  or merely occupies the rubble. The Munitorum lists the world as contested, which is
+  the word it uses when a thing has been true so long that it has stopped being news.
+win_summary: >
+  The last enemy position in the Kestrel Deeps was cleared at some point during the
+  night, though no one filed the moment it happened. Gathral Secundus is returned to
+  full compliance. The hive lost four of its nine spires and roughly a third of the
+  people who lived in them, and the tithe assessment for next year has been revised
+  upward on the grounds that the survivors have more room now.
+loss_summary: >
+  Gathral Secundus fell on a Tuesday. The evacuation took the Administratum staff,
+  the tithe records and eleven crates of devotional statuary. It did not take the
+  eighteen million people who lived below the ninetieth level, on the grounds that
+  there was no lift capacity and no order authorising one. Cartography Corps has
+  updated the sector maps accordingly.

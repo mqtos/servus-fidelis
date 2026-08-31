@@ -1,0 +1,30 @@
+id: campaign_20_candlemarch
+name: "The Siege of Candlemarch"
+region: region_ambrosian_reach
+order: 20
+threshold: 260
+runs_ceiling: 13
+world_type: shrine
+position: { x: 64, y: 12 }
+flavor_intro: >
+  Eleven thousand candles burn in the Hall of Perpetual Attendance on Candlemarch and
+  none of them has gone out in nine hundred years. There is a roll listing every
+  candle, the family responsible for it and the date of its last replacement, and the
+  roll is read out in full once a month. The enemy has been inside the outer precinct
+  since spring. The Cardinal's office has issued exactly one operational instruction
+  to the garrison, which is that the Hall must not be permitted to go dark, and has
+  declined to issue a second on the grounds that the first covers everything.
+win_summary: >
+  The precinct was retaken in the ninth month and the Hall never went dark, though
+  four hundred candles were relit from neighbours during the worst of it and the roll
+  has been amended to reflect this in a footnote. The Cardinal has declared the
+  defence a work of devotion and has commissioned a window depicting it. The window
+  shows the candles. Casualty returns for the garrison were filed separately and are
+  held in a different building.
+loss_summary: >
+  Candlemarch fell in the tenth month and the Hall of Perpetual Attendance burned in
+  a way nobody had planned for, which is to say entirely and at once. The roll
+  survived because a junior custodian carried it out, and the Ecclesiarchy has
+  confirmed that the obligation recorded in it transfers to the surviving families
+  wherever they are now resettled. Eleven thousand candles are therefore still due.
+  The families have been informed by letter.

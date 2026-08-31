@@ -1,0 +1,16 @@
+id: origin_spire_born
+name: "Hive World: Upper Spire"
+record_phrase: "the upper spire"
+description: >
+  You were born in the recycled sunlight of the spire tops, where the air is filtered
+  twice before anyone important breathes it. Your family had a name that meant
+  something. It will mean considerably less once you are standing in a trench.
+stat_modifiers: { Fel: 5, Int: 5, S: -5, T: -5 }
+starting_tags: [Spire-Born, Well-Educated]
+# Long, Latinate, hyphenated. The house name is the point: it is the thing the origin
+# description promises will stop mattering.
+name_pools:
+  forenames: [Aurelian, Castella, Veridian, Ottavia, Lucan, Serapha, Maximus, Ilyana]
+  surnames: [Venk-Halloran, Draxos-Ferrand, Ulmarch, Sethine-Voll, Corvale,
+             Rhennik-Ausse, Palatine-Vosk]
+weight: 1

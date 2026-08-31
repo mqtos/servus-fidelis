@@ -1,0 +1,76 @@
+# Adapted from the Content Bible 6 worked example. The Bible writes vignettes as
+# multi-beat documents (beats + outcomes); the engine only interprets single event
+# cards, so this is authored as one card. See content/README.md.
+id: longwar_001_the_trench_line
+stage: long_war
+tone: grim
+requires: { tags_any: [Line-Infantry] }
+weight: 6
+text: >
+  The trenches of Gathral Secundus had not moved in eleven months. Neither had most of
+  the men who first dug them. The line was held by rotation, by habit, and by the fact
+  that both sides had run out of ideas at roughly the same time and neither had run out
+  of people.
+choices:
+  - id: hold_the_line
+    label: "Hold your position"
+    stat_check: { stat: [WP, T], difficulty: 0 }
+    on_critical_success:
+      stat_changes: { WP: 5, T: 4 }
+      add_tags: [Trench-Veteran, Decorated]
+      result_text: >
+        Nineteen hours, no relief, and at the end of it the position was where it had
+        been at the start, which on the Gathral line is the definition of a victory. A
+        staff officer who had not been there wrote the citation. It was accurate by
+        accident.
+    on_success:
+      stat_changes: { WP: 3, T: 2 }
+      add_tags: [Trench-Veteran]
+      result_text: >
+        You held. There is not more to say about it than that, and the men who were
+        there have never found more to say about it either, which is why they are
+        difficult to talk to afterwards.
+    on_failure:
+      stat_changes: { T: 2, WP: -2 }
+      add_tags: [Trench-Veteran, Flinches]
+      result_text: >
+        The line broke forty metres to your left and you went back with it, which was
+        the only survivable option and is not how it reads in the log. The ground was
+        retaken in the morning by other men. Two of them are why you still do not sleep
+        well.
+    on_critical_failure:
+      terminal: true
+      ending_category: pointless_death
+      result_text: >
+        The parapet took a direct hit at the hour when nothing had happened for so long
+        that nobody was looking at anything. It was not a battle. It was the eleventh
+        month of the same afternoon, and you were standing in the wrong metre of it.
+  - id: raid_out
+    label: "Take a raiding party out of the line"
+    stat_check: { stat: [Ag, WS], difficulty: -10 }
+    on_success:
+      stat_changes: { WS: 4, Ag: 3, Fel: 2 }
+      add_tags: [Trench-Veteran, Raider, Decorated]
+      result_text: >
+        Six out, six back, one prisoner and a captured vox set that the intelligence
+        section described in writing as the most useful thing to come off the Gathral
+        line in a year. The line still did not move. It moved for somebody else, later,
+        because of what was on that vox.
+    on_failure:
+      terminal: true
+      ending_category: glorious_death
+      result_text: >
+        You got two men out of the wire before the flares went up, and then you did the
+        arithmetic and stayed to make the noise while they ran. Both of them reached the
+        parapet. The citation, when it was eventually written, was one sentence long and
+        every word of it was true.
+  - id: dig
+    label: "Spend the rotation improving the position"
+    stat_changes: { T: 4, Int: 2, S: 2 }
+    add_tags: [Trench-Veteran, Squad-Trusted]
+    result_text: >
+      Revetting, drainage, two new firing bays and a sump that actually drained. Nobody
+      is decorated for a sump. Four months later the position took a bombardment that
+      killed nine men in the section to the left and two in yours, and the difference
+      was the sump.
+terminal: false

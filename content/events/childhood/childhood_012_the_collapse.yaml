@@ -1,0 +1,61 @@
+id: childhood_012_the_collapse
+stage: childhood
+tone: tense
+requires:
+  tags_any: [Hive-Born]
+weight: 3
+text: >
+  A support stanchion on the level below yours gave way in the night and took four
+  hab-blocks down with it. The Enforcers cordoned the area and posted a notice saying
+  that recovery operations would begin when resources permitted. You could hear
+  someone under the rubble, and the resources did not appear to be permitting.
+choices:
+  - id: go_into_the_rubble
+    label: "Go into the rubble"
+    stat_check: { stat: [S, T], difficulty: -10 }
+    on_critical_success:
+      stat_changes: { S: 3, T: 3, Fel: 4 }
+      add_tags: [Pulled-Them-Out, Known-Locally]
+      result_text: >
+        You brought out two of them alive and a third who very nearly was. For about
+        a month afterwards, people you did not know gave you things. Then the level
+        went back to normal, because levels do.
+    on_success:
+      stat_changes: { S: 2, T: 2 }
+      add_tags: [Pulled-Them-Out]
+      result_text: >
+        You got one of them out. The Enforcers arrived four hours later, recorded that
+        recovery had been effected by local initiative, and left. It was, technically,
+        a commendation.
+    on_failure:
+      stat_changes: { T: 2, WP: -2 }
+      add_tags: [Dug-Until-Dawn]
+      result_text: >
+        You dug until your hands stopped working and until the voice stopped
+        answering, in that order. The two events were not related, which took you a
+        long time to accept.
+    on_critical_failure:
+      stat_changes: { T: -3, Ag: -2 }
+      add_tags: [Crush-Injury, Dug-Until-Dawn]
+      result_text: >
+        The second collapse caught your leg. Someone pulled you out, which meant they
+        were not pulling out anybody else. You never learned who you cost, and you
+        have never gone looking.
+  - id: fetch_an_enforcer
+    label: "Go and find an Enforcer"
+    stat_changes: { Int: 2, Fel: 2 }
+    add_tags: [Went-Through-Channels]
+    result_text: >
+      You found one. He explained that recovery operations would begin when resources
+      permitted, and that reporting it a second time would be logged as obstruction.
+      You went home. The notice stayed up a further two weeks, and then somebody took
+      it down.
+  - id: stay_out_of_it
+    label: "Stay out of it"
+    stat_changes: { WP: -1, Per: 2 }
+    add_tags: [Learned-To-Look-Away]
+    result_text: >
+      You went back to bed. The sound stopped at some point before morning and you did
+      not get up to find out when. This is a more common underhive childhood than
+      anyone puts in writing.
+terminal: false

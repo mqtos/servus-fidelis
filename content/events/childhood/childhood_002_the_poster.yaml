@@ -1,0 +1,35 @@
+id: childhood_002_the_poster
+stage: childhood
+tone: quiet
+requires: {}
+weight: 4
+text: >
+  A recruitment poster went up on the wall of the distribution hall and stayed there
+  for eleven years. A Guardsman in clean armour, looking at something above and to the
+  left of whoever was looking at him. Underneath, in letters taller than his head:
+  THE EMPEROR ASKS ONLY THAT YOU STAND.
+choices:
+  - id: memorise_it
+    label: "Learn it by heart"
+    stat_changes: { WP: 3, Fel: 1 }
+    add_tags: [Faith-Zealous]
+    result_text: >
+      You could recite it before you could read the ration lists. Years later, in a
+      hole in the ground on a world you could not pronounce, you would say it out loud
+      and be surprised how much it still helped.
+  - id: notice_the_boots
+    label: "Notice that his boots are wrong"
+    stat_changes: { Per: 3, Int: 1 }
+    result_text: >
+      Nobody's boots looked like that. Not the enforcers', not the tithe-warden's. You
+      worked out, without anybody telling you, that the man in the poster had never
+      been anywhere. It was the first lie you caught by yourself, and you kept it.
+  - id: deface_it
+    label: "Write something underneath it"
+    stat_changes: { Fel: 2, WP: -1 }
+    add_tags: [Faith-Wavering]
+    result_text: >
+      What you wrote was not clever and was misspelled. It stayed up for two days,
+      which in the accounting of a place like that counted as a career in the arts.
+      An adult scrubbed it off without ever finding out who.
+terminal: false

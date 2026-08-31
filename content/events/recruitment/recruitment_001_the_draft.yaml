@@ -1,0 +1,62 @@
+# The default path, per Content Bible 4. Always eligible and heavily weighted, so most
+# runs pass through it. This is where the regiment is assigned and {regiment} stops
+# being an unresolved slot in the ending templates.
+id: recruitment_001_the_draft
+stage: recruitment
+tone: tense
+requires: {}
+weight: 10
+text: >
+  The Munitorum officials arrived on the same trucks that had, a generation earlier,
+  taken your world's harvest quota. This time they had come for people. A tally-servitor
+  read the shortfall aloud twice, in case anyone had missed the number the first time.
+choices:
+  - id: go_quietly
+    label: "Go quietly"
+    stat_changes: { WP: 2 }
+    set_regiment: "the 114th Gathral Rifles"
+    result_text: >
+      You did not resist. Resisting rarely improved anyone's paperwork. They stamped
+      you into the 114th Gathral Rifles, a regiment you had never heard of, raised
+      that morning, named after a place you would never see.
+  - id: try_to_run
+    label: "Try to run"
+    stat_check: { stat: [Ag], difficulty: -20 }
+    on_success:
+      stat_changes: { Ag: 3 }
+      add_tags: [Nearly-Deserted]
+      set_regiment: "the 114th Gathral Rifles"
+      result_text: >
+        You made it three streets before they caught you. They did not ask again, and
+        they wrote something small in the margin beside your name. You were put in the
+        114th Gathral Rifles with everyone else, but you were put at the front of it.
+    # Only the critical failure kills. GDD 5 puts the "died on turn one" variance at
+    # First Deployment, not here, so an ordinary failure marks the file instead: the
+    # Deserter-Record tag is what eventually collects on this choice.
+    on_failure:
+      stat_changes: { Ag: 1, Fel: -3 }
+      add_tags: [Nearly-Deserted, Deserter-Record]
+      set_regiment: "the 114th Gathral Rifles"
+      result_text: >
+        You made it one street. They took you back to the line by the collar in front of
+        everybody, and a clerk wrote two words against your name that you did not see and
+        would spend the next eleven years being treated according to. You went into the
+        114th Gathral Rifles like everyone else, and not like everyone else.
+    on_critical_failure:
+      terminal: true
+      ending_category: disgrace
+      add_tags: [Never-Enlisted]
+      result_text: >
+        They shot you in the street as an example to the others. Your name was never
+        entered. The quota was filled by somebody else's child instead, and the trucks
+        left on schedule.
+  - id: volunteer
+    label: "Step forward and volunteer"
+    stat_changes: { Fel: 3 }
+    add_tags: [Volunteer, Noted-Early]
+    set_regiment: "the 114th Gathral Rifles"
+    result_text: >
+      An officer with tired eyes wrote your name at the top of a very long list.
+      "Eager ones don't usually last," he said, not unkindly, "but you might." You
+      were the first name in the 114th Gathral Rifles. It is not nothing.
+terminal: false

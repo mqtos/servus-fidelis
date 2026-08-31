@@ -1,0 +1,18 @@
+id: origin_feral_world
+name: "Feral World: Tribal Warrior Culture"
+record_phrase: "a feral world surveyed once and never revisited"
+description: >
+  You were born beneath a sky your world's priests said belonged to the God-Emperor
+  alone, though you would not see His light with your own eyes for another decade.
+  Your people hunted with blades their grandfathers forged, and the Imperium was a
+  rumor in the shape of a ship that sometimes crossed the night sky.
+stat_modifiers: { S: 5, T: 5, Int: -5, Fel: -5 }
+starting_tags: [Feral-World, Superstitious]
+# Clan-affiliated rather than surnamed. The Munitorum will record this whole string as
+# a surname and misspell it, which is its own small piece of characterisation.
+name_pools:
+  forenames: [Rukh, Tamas, Ygrin, Vashka, Bora, Hollo, Kannu, Zev, Mirn, Ur]
+  surnames: ["Ashen Spear", "Cold River", "Long Winter", "Broken Tooth", "Red Snow",
+             "High Cairn", "Stonefire", "Black Hollow"]
+  format: "{forename} of the {surname}"
+weight: 1

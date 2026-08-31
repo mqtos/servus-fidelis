@@ -1,0 +1,48 @@
+{
+  "spentUsd": 7.720000000000003,
+  "images": 41,
+  "runs": [
+    {
+      "at": "2026-08-24T16:23:19.175Z",
+      "set": "probe",
+      "generated": 0,
+      "model": "gemini-3-pro-image"
+    },
+    {
+      "at": "2026-08-24T17:13:48.044Z",
+      "set": "probe",
+      "generated": 4,
+      "model": "gemini-3-pro-image"
+    },
+    {
+      "at": "2026-08-24T17:27:40.307Z",
+      "set": "phase1",
+      "generated": 14,
+      "model": "gemini-3-pro-image"
+    },
+    {
+      "at": "2026-08-24T17:31:29.852Z",
+      "set": "phase1",
+      "generated": 2,
+      "model": "gemini-3-pro-image"
+    },
+    {
+      "at": "2026-08-24T18:10:41.340Z",
+      "set": "probe",
+      "generated": 4,
+      "model": "gemini-3-pro-image"
+    },
+    {
+      "at": "2026-08-24T18:33:32.539Z",
+      "set": "phase1",
+      "generated": 14,
+      "model": "gemini-3-pro-image"
+    },
+    {
+      "at": "2026-08-25T07:12:28.320Z",
+      "set": "map",
+      "generated": 3,
+      "model": "gemini-3-pro-image"
+    }
+  ]
+}

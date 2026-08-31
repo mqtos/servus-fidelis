@@ -1,0 +1,28 @@
+id: campaign_08_anvil_nine
+name: "Anvil Nine"
+region: region_hesperine_forgeworks
+order: 8
+threshold: 160
+runs_ceiling: 11
+world_type: forge
+position: { x: 24, y: 13.5 }
+flavor_intro: >
+  Anvil Nine is a smelter platform the size of a continent and the Mechanicus will
+  not say what it smelts. The Guard's orders describe the objective as the northern
+  casting floors. The maps supplied show a blank rectangle with a bearing and a
+  temperature. Liaison has confirmed that soldiers are not to touch the rails, the
+  crucibles, the coolant lines or the floor itself in nineteen marked zones, which
+  leaves a corridor two metres wide running four kilometres into enemy positions.
+win_summary: >
+  The northern casting floors are secure and have been handed back to the Mechanicus,
+  who took possession without comment and sealed them the same day. Anvil Nine is
+  producing again at a rate nobody has been permitted to see. The four-kilometre
+  corridor is now designated a permanent right of way, the first ground on the
+  platform an Imperial soldier is entitled to stand on. It is two metres wide.
+loss_summary: >
+  The Mechanicus severed the northern floors from the rest of the platform while the
+  assault was still inside them. This was within their rights, was communicated
+  afterwards, and preserved an estimated ninety-six percent of Anvil Nine's output.
+  Casualties are not recorded, because the Guard's manifest and the platform's
+  manifest use different numbering and no one has been assigned to reconcile them.
+  The request for such an assignment is in its fourth year.

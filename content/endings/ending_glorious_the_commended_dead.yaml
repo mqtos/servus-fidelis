@@ -1,0 +1,13 @@
+id: ending_glorious_the_commended_dead
+category: glorious_death
+tone: grim
+requires: { tags_any: [Decorated, Trench-Veteran, Squad-Trusted, Section-Leader] }
+weight: 5
+headline: "KILLED IN ACTION: COMMENDED"
+summary_template: >
+  {name}, {final_rank}, {regiment}, died at {age_at_death} in circumstances that four
+  separate men described the same way, which almost never happens. The citation was
+  raised at company level, endorsed at battalion, and reduced by one grade at sector for
+  reasons of quota. It hangs in a hall on a world you never visited. Men who were there
+  still correct the record when they hear it told wrong, and there are fewer of them
+  every year.

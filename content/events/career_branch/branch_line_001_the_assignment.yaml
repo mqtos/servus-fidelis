@@ -1,0 +1,69 @@
+# The Line Infantry entry point, and the only branch authored in Phase 1. Always
+# eligible so every run has somewhere to go; the officer, commissariat, inquisition and
+# astartes entry cards are Phase 2 and will gate on the tags seeded during training.
+id: branch_line_001_the_assignment
+stage: career_branch
+tone: quiet
+requires: { tags_none: [Line-Infantry] }
+weight: 10
+text: >
+  Reassignment came on a single sheet with your name misspelled by one letter. Nothing
+  on it was a decision about you. It was a decision about a hole in a table of
+  organisation, and you were the nearest object of approximately the right shape.
+choices:
+  - id: take_the_line
+    label: "Sign it and go where it says"
+    stat_changes: { T: 3, WP: 2 }
+    add_tags: [Line-Infantry]
+    set_branch: line_infantry
+    set_rank: "Guardsman, 2nd Section"
+    result_text: >
+      Second Section, First Platoon, and a cot that had been slept in the previous week
+      by a man whose kit was still under it. You did not correct the spelling. Men who
+      correct the spelling are remembered by clerks, and clerks are the only people in
+      the Imperium with a genuinely long memory.
+  - id: ask_for_the_flank
+    label: "Ask to be put where the fighting is"
+    stat_check: { stat: [Fel, WP], difficulty: -10 }
+    on_success:
+      stat_changes: { WS: 3, WP: 3, Fel: 2 }
+      add_tags: [Line-Infantry, Volunteered-Forward]
+      set_branch: line_infantry
+      set_rank: "Guardsman, Assault Section"
+      result_text: >
+        The adjutant looked up for the first time in the conversation. Requests of that
+        kind are rare enough to be interesting and stupid enough to be granted. Assault
+        Section. Your life expectancy went down and your name went up, in that order and
+        by roughly the same amount.
+    on_failure:
+      stat_changes: { Fel: -1, T: 2 }
+      add_tags: [Line-Infantry]
+      set_branch: line_infantry
+      set_rank: "Guardsman, 2nd Section"
+      result_text: >
+        "Everyone is where the fighting is," said the adjutant, without looking up, and
+        stamped the sheet as written. It was the correct answer and it was delivered
+        with the weariness of a man who gives it eleven times a week.
+  - id: ask_for_the_rear
+    label: "Ask for anything behind the line"
+    stat_check: { stat: [Fel, Int], difficulty: -20 }
+    on_success:
+      stat_changes: { Int: 3, Fel: 2, T: 1 }
+      add_tags: [Line-Infantry, Quartermaster-Friend]
+      set_branch: line_infantry
+      set_rank: "Guardsman, Supply Detail"
+      result_text: >
+        You were attached to the supply detail on a technicality about your literacy
+        that was true, barely. It is not a coward's posting. It is a posting where the
+        odds are merely bad rather than actuarially decided, and you took it with both
+        hands.
+    on_failure:
+      stat_changes: { Fel: -3, WP: 1 }
+      add_tags: [Line-Infantry, Marked-Difficult]
+      set_branch: line_infantry
+      set_rank: "Guardsman, 2nd Section"
+      result_text: >
+        The adjutant wrote one word in the margin before he stamped it. You never saw
+        which word. Everyone who handled your file for the next eleven years read it
+        first, and adjusted, and nobody ever told you what it said.
+terminal: false

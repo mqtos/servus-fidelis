@@ -1,0 +1,12 @@
+id: ending_disgrace_the_example
+category: disgrace
+tone: grim
+requires: { tags_none: [Never-Enlisted] }
+weight: 3
+headline: "EXECUTED: EXAMPLE TO THE OTHERS"
+summary_template: >
+  {name}, {final_rank}, {regiment}, ended at {age_at_death} against a wall selected for
+  its acoustics. The charge was read out correctly, the form was signed by an officer
+  who did not look up, and the quota was filled by somebody else within the week. The
+  Imperium did not lose an hour to it. The men who watched lost rather more, and were
+  back on the line by the afternoon, which was the point of the exercise.

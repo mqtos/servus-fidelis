@@ -1,0 +1,29 @@
+id: campaign_12_machris_compliance
+name: "The Machris Compliance"
+region: region_hesperine_forgeworks
+order: 12
+threshold: 200
+runs_ceiling: 12
+world_type: forge
+position: { x: 24, y: 27 }
+flavor_intro: >
+  Machris makes weapons for a war that ended nine hundred years ago and has never
+  been told. Its output goes into holding fields under the southern range, where the
+  count now stands somewhere above four billion units of a pattern no living regiment
+  is trained on. The forge will not stop, will not answer and will not admit an
+  inspector. The compliance order is a formality: what sector command actually wants
+  is the southern range opened.
+win_summary: >
+  Machris is compliant. The southern fields have been opened and the count confirmed
+  at four billion one hundred million units, all obsolete, all in perfect condition.
+  The Munitorum has issued them to eleven regiments who will now be retrained on a
+  pattern with no manufacturing support anywhere in the sector. The forge has been
+  instructed to convert to current pattern and has acknowledged the instruction
+  without agreeing to it.
+loss_summary: >
+  The assault reached the southern range and the fields were opened from the inside,
+  which nobody had considered possible. What came out was armed, numerous and
+  uninterested in the distinction between the two forces in front of it. Machris is
+  now held by its own product. The Mechanicus has asked that the world be left alone
+  for a century, and sector command, having no capacity to do anything else, has
+  agreed.

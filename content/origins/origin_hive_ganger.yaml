@@ -1,0 +1,15 @@
+id: origin_hive_ganger
+name: "Hive World: Underhive"
+record_phrase: "the underhive"
+description: >
+  You were born nine kilometres below the last window. The underhive fed you what it
+  had, which was neither much nor clean, and taught you the two skills it teaches
+  everyone: notice things early, and be somewhere else by the time they arrive.
+stat_modifiers: { Ag: 5, Per: 5, Fel: -5, T: -5 }
+starting_tags: [Hive-Born, Streetwise]
+# Short, clipped, consonant-heavy. Underhive surnames are block slang and inherited
+# nicknames, not lineage, because nobody down here is keeping a family record.
+name_pools:
+  forenames: [Dreg, Sull, Kesh, Varo, Nim, Tach, Brek, Orla, Wick, Hesp, Sarn, Dolo]
+  surnames: [Vex, Kell, Grast, Threin, Sump, Orsk, Brack, Duin, Rell, Skane]
+weight: 1

@@ -1,0 +1,30 @@
+id: campaign_26_brannoch_claim
+name: "The Brannoch Claim"
+region: region_kolvar_deeps
+order: 26
+threshold: 330
+runs_ceiling: 14
+world_type: mining
+position: { x: 55, y: 66 }
+flavor_intro: >
+  Two chartist combines hold deeds to the Brannoch shafts and the Administratum has
+  confirmed that both documents are genuine. The dispute has been in arbitration for
+  sixty-one years and in open fighting for nine of them. Hallance Deep Extraction
+  requested Guard support on the grounds that it filed first, and the Vurrel Concern
+  requested Guard support on the grounds that it is currently standing on the ore.
+  Sector command sent a regiment to each and instructed neither to raise the subject
+  with the other.
+win_summary: >
+  The Brannoch shafts are back in Imperial compliance and the question of who owns
+  them has been referred upward to a court that convenes once every forty years. Both
+  combines have submitted invoices for damage to fixed plant. The Munitorum has
+  accepted both, since rejecting either would require deciding whose plant it was.
+  Extraction resumed at the Number Four winding hall within a week, using labour drawn
+  from the surviving levies, who were not asked.
+loss_summary: >
+  Brannoch is written off. The Vurrel Concern has already reclassified the claim as a
+  non-performing asset and closed the ledger, which under combine practice terminates
+  the indenture of every worker on it, including the ones who are still alive down
+  there. Hallance Deep Extraction has done nothing at all, and continues to list the
+  shafts as productive in its annual return. The regiment's dead are recorded as
+  expended on private property, a category that carries no pension.

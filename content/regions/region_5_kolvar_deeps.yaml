@@ -1,0 +1,9 @@
+id: region_kolvar_deeps
+name: "The Kolvar Deeps"
+order: 5
+min_player_level: 40
+bounds: { x: 48, y: 59, width: 31, height: 32 }
+survey: >
+  Mining worlds and the void stations that hold their claims. Everything here is owned by
+  a chartist combine, garrisoned by that combine's own levies, and listed as Imperial on
+  the strength of a document signed nine hundred years ago.

@@ -1,0 +1,31 @@
+id: campaign_30_marrow_reclamation
+name: "The Marrow Reclamation"
+region: region_kolvar_deeps
+order: 30
+threshold: 400
+runs_ceiling: 15
+world_type: mining
+position: { x: 54, y: 76 }
+flavor_intro: >
+  Marrow was worked out three hundred years ago, stripped of anything that could be
+  lifted and abandoned to its own weather. Then a junior assayer at the Vurrel Concern
+  found an arithmetic error in the original survey and the world went from worthless
+  to the richest unclaimed body in the Deeps in the time it took to countersign a
+  form. Four combines filed within the same month. The Guard was committed to enforce
+  the earliest filing, then recommitted twice as earlier filings were produced. The
+  assayer has been promoted and, separately, cannot be located.
+win_summary: >
+  The Marrow Reclamation is complete and the world is Imperial. Extraction rights have
+  gone to the Vurrel Concern, whose claim was neither the earliest nor the best
+  documented but was the one being physically stood on when the shooting ended. Two
+  rival combines have appealed. The appeal will be heard in due course by the same
+  court that has yet to reach Brannoch. In the meantime the ore is coming up at the
+  rate of nine hundred tonnes a day and the question of ownership is being settled by
+  the direction the conveyor points.
+loss_summary: >
+  Marrow has been struck from the register a second time. All four combines withdrew
+  their filings within a fortnight of the loss, which suggests the arithmetic error
+  was known to be an error some time before the fighting started. Sector command has
+  requested clarification. The Vurrel Concern has replied that the matter is
+  commercially sensitive. Eleven thousand Guardsmen are recorded as having died over a
+  figure that was corrected quietly in a ledger nobody has agreed to produce.

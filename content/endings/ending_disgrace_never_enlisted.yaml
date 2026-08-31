@@ -1,0 +1,15 @@
+# For runs that end during recruitment, before a regiment or rank exists. The other
+# disgrace ending slots {regiment} and {final_rank}, which for these characters would
+# resolve to placeholder text and contradict the fiction.
+id: ending_disgrace_never_enlisted
+category: disgrace
+tone: grim
+requires: { tags_any: [Never-Enlisted] }
+weight: 10
+headline: "NO RECORD OF SERVICE"
+summary_template: >
+  {name} died at {age_at_death} in the street of the district they were born in, three
+  streets into a decision that took about four seconds to make. There is no service
+  record, because service never began. The shortfall was made up from the next household
+  on the list before the trucks left, so the number the tally-servitor read out twice
+  that morning was, in the end, correct.

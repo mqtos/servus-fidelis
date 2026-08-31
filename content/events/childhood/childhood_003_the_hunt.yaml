@@ -1,0 +1,47 @@
+id: childhood_003_the_hunt
+stage: childhood
+tone: grim
+requires: { tags_any: [Feral-World] }
+weight: 3
+text: >
+  The grazer had been driven into the shallow water and could not turn. The men of the
+  clan stood back and gave you the short spear, because it was your year to be given
+  the short spear, and because an animal that cannot turn is how everyone starts.
+choices:
+  - id: do_it_clean
+    label: "Put it down cleanly"
+    stat_check: { stat: [S, Per], difficulty: 0 }
+    on_critical_success:
+      stat_changes: { S: 3, Per: 3, WP: 2 }
+      add_tags: [Cold-Handed]
+      result_text: >
+        One stroke, in the right place, and the water went quiet. Your uncle looked at
+        you for slightly too long afterwards. It was not admiration. It was a man
+        recalculating what you were going to be.
+    on_success:
+      stat_changes: { S: 2, Per: 1 }
+      result_text: >
+        It took two strokes and it was not beautiful, but it was finished, and nobody
+        had to finish it for you. You were allowed to carry the liver back.
+    on_failure:
+      stat_changes: { WP: 2, S: 1 }
+      result_text: >
+        You struck badly and the thing screamed at you for a long time before an adult
+        stepped in and did it properly. Nobody said anything, which was worse. You
+        learned what an unfinished job sounds like.
+    on_critical_failure:
+      stat_changes: { WP: -2, T: 2 }
+      add_tags: [Flinches]
+      result_text: >
+        You dropped the spear in the water. Your uncle retrieved it, killed the animal,
+        and handed the spear back to you with the blood still on it so you would have
+        to hold it. You held it. That was the lesson, and it took.
+  - id: refuse
+    label: "Hand the spear back"
+    stat_changes: { WP: -2, Int: 2, Fel: -2 }
+    add_tags: [Marked-Soft]
+    result_text: >
+      You gave it back. Somebody older did the work. For three years afterwards you
+      were spoken to slightly slower than everyone else, as though you might not follow.
+      You followed. You just stopped answering.
+terminal: false

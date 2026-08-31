@@ -1,0 +1,29 @@
+id: campaign_05_ippolit_majoris
+name: "Ippolit Majoris"
+region: region_gathral_sprawl
+order: 5
+threshold: 140
+runs_ceiling: 11
+world_type: hive
+position: { x: 26, y: 82 }
+flavor_intro: >
+  There has never been a war on Ippolit Majoris. There has been the Ninety-Year
+  Instruction, a public order requiring every citizen above the age of nine to report
+  daily to a labour post, and there has been what happens when the labour posts stop
+  issuing food. Sector command has classified the situation as an insurrection, which
+  entitles it to reinforcements. The hive's own enforcers classified it as a
+  scheduling problem and were the first to be killed.
+win_summary: >
+  Order is restored on Ippolit Majoris and the Ninety-Year Instruction has been
+  extended by a further forty. Casualties among the civil population are listed at
+  six million, of which the Administratum attributes four to the insurrection and two
+  to the restoration of order, on the grounds that the distinction matters for the
+  tithe rebate. The labour posts reopened within a week. Attendance is reported at
+  ninety-nine percent.
+loss_summary: >
+  Ippolit Majoris is now administered by a body calling itself the Attendance
+  Committee, which keeps records, collects a tithe and has offered to pay it. Sector
+  command has not replied, because there is no form for accepting a tithe from a
+  world in rebellion and no officer willing to invent one. The regiments sent to
+  suppress the Committee were absorbed into it. Several of them are said to be quite
+  senior now.

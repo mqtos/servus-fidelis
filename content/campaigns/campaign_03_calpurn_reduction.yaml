@@ -1,0 +1,28 @@
+id: campaign_03_calpurn_reduction
+name: "The Reduction of Calpurn"
+region: region_gathral_sprawl
+order: 3
+threshold: 130
+runs_ceiling: 11
+world_type: hive
+position: { x: 13, y: 57 }
+flavor_intro: >
+  Calpurn was a compliant world until the census. What the census found is sealed,
+  and the order that followed it is not: the hive is to be reduced, level by level,
+  from the top. Sector command has issued the operation a file number, a supply
+  allocation and no explanation. The regiments assigned to it have been told that
+  everything below the sixtieth floor is to be treated as hostile, including anyone
+  who comes up the stairs asking why.
+win_summary: >
+  The reduction of Calpurn is complete to the fourth sublevel, which is as far as the
+  order specified. Twenty-two million names have been struck from the census in a
+  single entry. The hive is quiet, structurally sound and rated fit for resettlement
+  in approximately ninety years. Nobody involved has been told what the census found,
+  and the file remains sealed at sector level.
+loss_summary: >
+  The regiments assigned to Calpurn stopped transmitting in the eighth week, in the
+  order they had been deployed, from the top down. Sector command's position is that
+  the operation concluded successfully and that the silence is consistent with that.
+  The world has been placed under interdict and its orbital lanes closed. The census
+  file has been destroyed rather than sealed, which is a different procedure and
+  requires a different form.

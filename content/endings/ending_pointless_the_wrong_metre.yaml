@@ -1,0 +1,12 @@
+id: ending_pointless_the_wrong_metre
+category: pointless_death
+tone: grim
+requires: { tags_none: [Never-Enlisted] }
+weight: 3
+headline: "KILLED IN ACTION: UNREMARKABLE"
+summary_template: >
+  {name}, {final_rank}, {regiment}, died at {age_at_death}. The circumstances were
+  entered in the company log in the standard eleven-word form and the log was closed at
+  the end of the month like every other month. No citation was raised, because citations
+  are raised by witnesses and the witnesses were busy. The establishment was informed,
+  and in due course a replacement of approximately the right shape was found.

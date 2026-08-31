@@ -1,0 +1,77 @@
+# Second Stage 6 beat. Gated on the tag the assignment card grants, so it can only ever
+# draw after it, which is how the stage gets a fixed two-card shape without the engine
+# needing sequence support.
+id: branch_line_002_the_section
+stage: career_branch
+tone: tense
+requires: { tags_any: [Line-Infantry] }
+weight: 8
+text: >
+  Second Section had lost its corporal in a way that nobody in the section would describe
+  the same way twice. There were eight of you left and no replacement was coming, because
+  replacements are allocated against establishment and the establishment had not yet been
+  informed that the corporal was dead.
+choices:
+  - id: take_it
+    label: "Start giving orders and see if they take"
+    stat_check: { stat: [Fel, WP], difficulty: 0 }
+    on_critical_success:
+      stat_changes: { Fel: 4, WP: 4, Int: 2 }
+      add_tags: [Section-Leader, Squad-Trusted, Noted-Early]
+      set_rank: "Corporal"
+      result_text: >
+        You said what needed doing in the flat voice of a man reading a duty roster and
+        the section did it, and after the third day nobody remembered that it had ever
+        been a question. The rank caught up eleven weeks later. The job had started
+        immediately, which is the normal order of events.
+    on_success:
+      stat_changes: { Fel: 2, WP: 2 }
+      add_tags: [Section-Leader]
+      set_rank: "Corporal"
+      result_text: >
+        It took, mostly. Two of them resented it and one of those two was right to. You
+        got the stripe and the extra rations and the specific insomnia that belongs to
+        men who are responsible for other men in a place where responsibility does not
+        help.
+    on_failure:
+      stat_changes: { Fel: -2, WP: 1, Per: 2 }
+      result_text: >
+        A man eleven years older than you said "no" without any particular malice and
+        the whole thing was settled in one syllable. He ran the section informally for
+        four months and did it well. You learned more from watching him than you would
+        have learned from the stripe.
+    on_critical_failure:
+      stat_changes: { Fel: -4, WP: -2 }
+      add_tags: [Marked-Difficult]
+      result_text: >
+        You picked the wrong first order, gave it in the wrong voice, and were laughed
+        at by eight men in a hole in the ground. There is no coming back from that
+        within a section. There is only being transferred, eventually, to another one.
+  - id: hold_it_together
+    label: "Keep the section fed and let rank sort itself out"
+    stat_changes: { Fel: 3, Int: 2, T: 2 }
+    add_tags: [Squad-Trusted]
+    result_text: >
+      No stripe, no announcement. You handled the ration draw, the ammunition returns and
+      the two men who had stopped washing, and the section held together for another
+      seven months. The eventual corporal, when he arrived, was an idiot, and by then it
+      did not matter much.
+  - id: transfer_out
+    label: "Put in for a transfer"
+    stat_check: { stat: [Int, Fel], difficulty: -20 }
+    on_success:
+      stat_changes: { Int: 3, Ag: 2 }
+      add_tags: [Transferred, Quartermaster-Friend]
+      result_text: >
+        The form went through, which almost never happens, because you filed it against
+        an establishment vacancy rather than a preference. Second Section was
+        subsequently used to screen a withdrawal at Kell Ford. You were nineteen
+        kilometres away, counting boots.
+    on_failure:
+      stat_changes: { Fel: -3, WP: 2 }
+      add_tags: [Marked-Difficult]
+      result_text: >
+        The form came back with a single line struck through it and no comment. Worse,
+        it came back through the section's own runner, who read it, because everybody
+        reads everything. You stayed. They knew you had tried not to.
+terminal: false

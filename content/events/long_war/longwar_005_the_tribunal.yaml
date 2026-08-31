@@ -1,0 +1,75 @@
+# Where a marked file finally collects. Gated on the tags seeded at recruitment and
+# training, this is the main non-recruitment route into the disgrace endings.
+id: longwar_005_the_tribunal
+stage: long_war
+tone: grim
+requires: { tags_any: [Deserter-Record, Marked-Difficult, Known-To-Enforcers, Informer] }
+weight: 5
+text: >
+  A position was lost at Kell Ford and the loss required an explanation, and explanations
+  in the Imperial Guard are assembled from whoever is available rather than whoever was
+  responsible. A field tribunal of three officers convened in a requisitioned barn. Your
+  file was on the table. It was open at a page you had never read.
+choices:
+  - id: answer_the_charge
+    label: "Answer the charge on its facts"
+    stat_check: { stat: [Int, WP], difficulty: -10 }
+    on_critical_success:
+      stat_changes: { Int: 4, WP: 4, Fel: 3 }
+      add_tags: [Exonerated]
+      result_text: >
+        You had the timings, the ration returns and the name of the officer who ordered
+        the withdrawal, and you gave them in order without editorialising. The tribunal
+        found against a man who was not in the room. Nobody thanked you. The page in your
+        file was not removed, but a second page was added after it.
+    on_success:
+      stat_changes: { WP: 3, Int: 2 }
+      add_tags: [Exonerated]
+      result_text: >
+        It took four hours and the finding was "no case to answer", which is the Imperial
+        phrase for a man who has been found innocent in a way that everyone would prefer
+        not to discuss again. You went back to the line. The file went back to the safe.
+    on_failure:
+      stat_changes: { WP: 2, Fel: -3 }
+      add_tags: [Marked-Difficult]
+      result_text: >
+        You were accurate, and accuracy was not what the barn was for. The finding was
+        recorded as "conduct noted", a formulation that ends no career and repairs none
+        either. You were still a Guardsman in the morning, and would be one for the rest
+        of your service, at exactly the rank you held.
+    on_critical_failure:
+      terminal: true
+      ending_category: disgrace
+      result_text: >
+        Somewhere in the fourth hour you said the sentence that the presiding officer had
+        been waiting the whole four hours for. It was true. It was about him. The finding
+        took eleven minutes to write and was carried out behind the barn before the light
+        went.
+  - id: say_nothing
+    label: "Say nothing and let it run"
+    stat_check: { stat: [WP], difficulty: -20 }
+    on_success:
+      stat_changes: { WP: 5, T: 2 }
+      add_tags: [Hard-Case]
+      result_text: >
+        Silence is not a defence and it is not nothing, and the tribunal, which had
+        expected a performance, had to proceed on the documents alone. The documents were
+        thin. The finding was adjourned indefinitely, which in the Guard is the same as an
+        acquittal and lasts exactly as long as the officer who signed it does.
+    on_failure:
+      terminal: true
+      ending_category: disgrace
+      result_text: >
+        They read the file aloud, and the file was one-sided because files are, and you
+        let them, because by then you had been reading the room for four hours and had
+        stopped believing there was a version of this where you spoke and it helped.
+  - id: name_the_officer
+    label: "Give them the officer who ordered the withdrawal"
+    stat_changes: { Fel: 2, WP: -3 }
+    add_tags: [Informer, Exonerated]
+    result_text: >
+      You gave them a captain with nine years in and a wife on Gathral Primus. The
+      tribunal was visibly relieved, because a captain is a better explanation than a
+      corporal and the barn wanted an explanation, not a corporal. You were returned to
+      duty the same afternoon. He was not.
+terminal: false

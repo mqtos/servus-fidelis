@@ -1,0 +1,14 @@
+# Companion to ending_disgrace_never_enlisted, for the press-gang variant where the
+# character is killed resisting rather than executed as an example.
+id: ending_pointless_never_enlisted
+category: pointless_death
+tone: grim
+requires: { tags_any: [Never-Enlisted] }
+weight: 10
+headline: "NOT RECOVERED"
+summary_template: >
+  {name} died at {age_at_death} on the flats, in the dark, over a rope. The lander was on
+  a schedule and the body would have taken two men and a stretcher, so the body stayed
+  where it was. No name was entered on the manifest and no notification was generated,
+  because a notification requires a record and there was never a record. The Imperium
+  does not know this happened. It does not know most things.

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- The same brass corner marks the Panel component draws, around a single upright.
+       Reads at 16px as a sealed record rather than as a letterform, and carries no
+       heraldry, which the art prompts refuse for the same reason. -->
+  <rect width="32" height="32" fill="#14110e" />
+  <g fill="none" stroke="#b08d4f" stroke-width="2">
+    <path d="M4 10V4h6" />
+    <path d="M22 4h6v6" />
+    <path d="M28 22v6h-6" />
+    <path d="M10 28H4v-6" />
+  </g>
+  <path d="M16 9v14" stroke="#dcb771" stroke-width="2.5" stroke-linecap="square" />
+</svg>

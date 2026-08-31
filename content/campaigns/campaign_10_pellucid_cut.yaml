@@ -1,0 +1,28 @@
+id: campaign_10_pellucid_cut
+name: "The Pellucid Cut"
+region: region_hesperine_forgeworks
+order: 10
+threshold: 150
+runs_ceiling: 11
+world_type: mining
+position: { x: 16.5, y: 21 }
+flavor_intro: >
+  The Cut is one trench, eleven hundred kilometres long and rather deeper than the
+  survey admits, dug to reach a seam the Mechanicus rates as the reason this region
+  exists. Everything in it moves on a single rail line, up and down, on a timetable
+  unchanged in nine hundred years. The enemy holds four hundred kilometres of the
+  middle. The trains still run through, because stopping them requires an authority
+  the Mechanicus has not delegated and the Guard cannot claim.
+win_summary: >
+  The middle four hundred kilometres are Imperial again and the timetable was not
+  interrupted at any point during the fighting, a fact the Mechanicus has recorded
+  with more evident satisfaction than the recapture itself. Ore is moving. Two
+  hundred and forty rail workers who spent the war operating under enemy control have
+  been cleared of collaboration on the grounds that they never once missed quota.
+loss_summary: >
+  The Cut is lost along its full length and the trains are still running. Imperial
+  observers on the rim report the same timetable, the same tonnage and the same
+  livery, going the other way. The Mechanicus has declined to sever the line, citing
+  the cost of the rolling stock. A note has been added to the regional assessment
+  advising that the Pellucid seam should now be treated as an enemy asset of the
+  first order.

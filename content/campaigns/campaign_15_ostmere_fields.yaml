@@ -1,0 +1,28 @@
+id: campaign_15_ostmere_fields
+name: "Ostmere Fields"
+region: region_varn_belt
+order: 15
+threshold: 225
+runs_ceiling: 12
+world_type: agri
+position: { x: 36, y: 56 }
+flavor_intro: >
+  Everything on Ostmere moves by water. Four thousand kilometres of irrigation canal
+  carry the crop to the coast, and the whole system depends on nine lock houses that
+  were built by a family firm eight hundred years ago and have been maintained by the
+  same family ever since. The enemy took the third lock in the first week and the
+  water backed up into the eastern fields, which drowned more of the harvest than the
+  fighting did. Command has been advised that the locks cannot be shelled. Command
+  has asked why. The answer, so far, is that the Ostmere family will not consent.
+win_summary: >
+  All nine locks are back under Imperial control and seven of them still work. The
+  eastern fields will be under a metre of standing water for two more seasons, and
+  the surveyors have reclassified them as fishery, which the tithe schedule has no
+  category for. Four members of the lock-keeping family survived and have signed the
+  maintenance ledger for the year as usual. The ledger does not mention the war.
+loss_summary: >
+  Ostmere was not so much lost as flooded out from under everyone. With the locks
+  gone the canals emptied into the lowlands over eleven days and took the roads,
+  the silos and the withdrawal route with them. The last transports lifted from a
+  field that had been dry ground that morning. Cartography Corps has requested new
+  survey flights on the grounds that the coastline is no longer where it was.

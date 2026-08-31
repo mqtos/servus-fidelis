@@ -1,0 +1,25 @@
+id: campaign_25_kolvar_deeps
+name: "The Kolvar Deeps"
+region: region_kolvar_deeps
+order: 25
+threshold: 340
+runs_ceiling: 14
+world_type: death
+position: { x: 60, y: 72 }
+flavor_intro: >
+  Kolvar was a death world before anyone contested it, which means the enemy is the
+  second thing here that wants the regiment dead and not obviously the more committed
+  of the two. Survey lists the atmosphere as breathable for eleven hours. It does not
+  say eleven consecutive hours, and the distinction has cost more lives than the
+  fighting.
+win_summary: >
+  The Deeps are declared secure, a phrase the surveying officer objected to in
+  writing and was overruled on. Imperial presence on Kolvar now consists of one
+  fortified landing field and an instruction that nobody leave it. By the standard
+  applied to death worlds this counts as a victory, and the sector map has been
+  coloured accordingly.
+loss_summary: >
+  The withdrawal from Kolvar was orderly for the first two days. Sector command has
+  recorded the world as lost to enemy action, which is true in the sense that the
+  enemy is there and we are not, and false in every way that would have helped the
+  people who were told to hold it.

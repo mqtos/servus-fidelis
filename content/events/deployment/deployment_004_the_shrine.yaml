@@ -1,0 +1,50 @@
+id: deployment_004_the_shrine
+stage: deployment
+tone: absurd
+requires: {}
+weight: 4
+text: >
+  The company took a village that had already been taken twice and found a shrine with
+  the roof off and the reliquary intact. The priest attached to the battalion declared
+  it a sign of the Emperor's favour. The quartermaster declared it eleven kilograms of
+  gilt bronze. Both declarations were entered in the same log, on the same page, by the
+  same clerk.
+choices:
+  - id: pray
+    label: "Kneel with the priest"
+    stat_changes: { WP: 4, Fel: 1 }
+    add_tags: [Faith-Zealous]
+    result_text: >
+      Forty men knelt in a roofless building in the rain and were, briefly and
+      genuinely, comforted. The shelling resumed at dawn and killed four of them. Both
+      of those facts are true and neither one cancels the other, whatever the man
+      arguing with you in the trench that night believed.
+  - id: inventory_it
+    label: "Help the quartermaster weigh it"
+    stat_changes: { Int: 3, Fel: 2 }
+    add_tags: [Quartermaster-Friend]
+    result_text: >
+      Eleven point four kilograms, entered in triplicate, requisitioned upward, and
+      never seen again by anyone in the company. You learned the actual shape of the
+      Imperium that afternoon, which is a shape made of forms, and you learned it from a
+      man who was cheerful about it.
+  - id: take_a_piece
+    label: "Pocket something small"
+    stat_check: { stat: [Ag, WP], difficulty: -10 }
+    on_success:
+      stat_changes: { Ag: 2, WP: 2 }
+      add_tags: [Light-Fingered, Carries-A-Relic]
+      result_text: >
+        A finger-length aquila with the plating half gone. You have carried it through
+        four campaigns and you are not entirely sure any more whether you kept it
+        because it was worth something or because you had started to feel it was
+        keeping you.
+    on_failure:
+      stat_changes: { Fel: -3, WP: -1 }
+      add_tags: [Known-To-Enforcers, Marked-Difficult]
+      result_text: >
+        The priest saw you do it and made it a matter of doctrine rather than theft,
+        which meant it went to the commissar rather than the sergeant. You were not
+        shot, on the grounds that the regiment was under strength. That was the reason
+        given. It was written down as the reason.
+terminal: false

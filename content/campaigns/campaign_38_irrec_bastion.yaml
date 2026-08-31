@@ -1,0 +1,31 @@
+id: campaign_38_irrec_bastion
+name: "Irrec Bastion"
+region: region_blank_chart
+order: 38
+threshold: 560
+runs_ceiling: 16
+world_type: fortress
+position: { x: 90, y: 44 }
+flavor_intro: >
+  Irrec Bastion was built to hold a border the Cartography Corps has never finished
+  drawing. Its western wall faces surveyed space and is nine kilometres of gun line.
+  Its eastern wall faces the blank part of the chart and is identical, which cost the
+  same and was never explained. Standing Order Six requires the eastern batteries to
+  fire one round every hour into unsurveyed space, a practice the garrison calls the
+  count. Nine hundred years of it, and the impact log is still empty.
+win_summary: >
+  Irrec Bastion holds, and the count resumed inside a day at the required rate of one
+  round an hour. Ordnance reconciliation for the engagement runs to four hundred pages
+  and comes out nine million shells short, which the Munitorum has ruled an accounting
+  irregularity rather than a loss. Replacements arrived eleven months later and were
+  briefed on the western wall only. None of them has asked what the eastern batteries
+  are firing at. The officers who could have told them are on the western wall, in the
+  ground, under a marker that lists their strength and not their names.
+loss_summary: >
+  Irrec Bastion was carried from the west, which the garrison had always treated as
+  the safe direction on the grounds that it was the one on the map. The eastern
+  batteries fired the count through the whole of the final day, on the hour, because
+  no order had been issued to stop and no officer remained with the authority to issue
+  one. The Munitorum has closed the construction contract, citing completion. The
+  garrison strength of four hundred thousand was reconciled against the tithe in a
+  single line, and the line reads: expended.

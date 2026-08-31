@@ -1,0 +1,31 @@
+id: campaign_24_corvain_exhumation
+name: "The Corvain Exhumation"
+region: region_ambrosian_reach
+order: 24
+threshold: 320
+runs_ceiling: 14
+world_type: dead
+position: { x: 58, y: 26.5 }
+flavor_intro: >
+  Corvain died six hundred years ago in a plague the Ecclesiarchy has never named in
+  writing, and the atmosphere has been unbreathable since. What remains is the
+  Reliquary Deep, eleven levels of sealed vaults holding the accumulated holy objects
+  of forty worlds, none of which can be moved without a writ that takes a decade to
+  obtain. The writs came through last year. The enemy arrived four months later, and
+  both sides are now fighting in sealed suits over a world with nothing on it but
+  boxes. Nobody has lived here since before anyone's grandmother.
+win_summary: >
+  The Deep was cleared level by level and nine of the eleven vaults were opened and
+  emptied on schedule. The contents are aboard four transports bound for worlds that
+  requested them six hundred years ago and no longer exist, so the manifests are
+  being redirected as the Administratum works out who inherits. Two vaults were left
+  sealed because the writs covering them expired during the fighting. Reapplication
+  has been initiated and is expected to complete in nine years.
+loss_summary: >
+  Corvain is lost, which changes very little, since it was already a corpse and the
+  only argument was over what was in its pockets. The Reliquary Deep was not
+  destroyed on withdrawal because destruction of consecrated objects requires
+  Ecclesiarchical authority and the relevant office is four months away by
+  astropath. The forty worlds that placed objects in the Deep have been notified that
+  their property is currently unavailable. Eleven of them have asked when it will
+  become available again.

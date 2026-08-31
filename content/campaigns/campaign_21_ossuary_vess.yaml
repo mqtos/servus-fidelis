@@ -1,0 +1,32 @@
+id: campaign_21_ossuary_vess
+name: "Ossuary Vess"
+region: region_ambrosian_reach
+order: 21
+threshold: 290
+runs_ceiling: 13
+world_type: shrine
+position: { x: 69, y: 16 }
+flavor_intro: >
+  Vess is where the Reach buries its saints, and the burying has been going on long
+  enough that the crypts run four kilometres down through what used to be a mountain.
+  Nine hundred and forty confirmed holy dead are catalogued here, along with a
+  further eleven thousand whose sanctity is described in the register as pending
+  review. Fighting has reached the third gallery. Every metre of ground given up
+  costs the Ecclesiarchy relics it has already promised to other worlds, and the
+  shipping schedules for those promises have not been suspended.
+win_summary: >
+  The galleries are held down to the ninth level and the lower crypts were never
+  reached, which the Cardinal's office is presenting as total preservation. Six
+  hundred and twelve reliquaries were damaged in the fighting and have been
+  reclassified as martyred, a category that did not exist until this year and now
+  carries its own feast day. The pending review list grew by nineteen thousand names
+  during the campaign. Almost all of them were soldiers, and the review is expected
+  to take three centuries.
+loss_summary: >
+  The crypts were sealed from the inside at the fourth gallery by a demolition team
+  that did not come back up, and everything below that line is now inaccessible to
+  the Imperium and to whoever holds the surface. Vess is technically lost and its
+  saints are technically safe, and the Ecclesiarchy has spent two years arguing about
+  which of those facts should appear first in the record. The relic shipments
+  promised to nine other worlds have been cancelled by letter. Four of those worlds
+  have formally objected.

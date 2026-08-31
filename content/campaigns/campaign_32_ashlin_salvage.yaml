@@ -1,0 +1,29 @@
+id: campaign_32_ashlin_salvage
+name: "The Ashlin Salvage"
+region: region_silent_marches
+order: 32
+threshold: 425
+runs_ceiling: 15
+world_type: dead
+position: { x: 65, y: 44 }
+flavor_intro: >
+  Nothing on Ashlin is broken. The air is breathable, the power grid in the Ellsmere
+  district still runs on its own governors, and the manufactorum floors are laid out
+  for a shift that was due to start ninety years ago. What is absent is people. The
+  cause of death is recorded in the sector file as not established, in the same hand
+  and the same ink as the rest of the entry, which suggests the clerk did not consider
+  it the important part. The Imperium wants the machine tools. So does somebody else.
+win_summary: >
+  The Ellsmere plant is secure and the first tool trains lifted within a month, which
+  the Munitorum regards as the fastest recovery of dead-world plant in the sector's
+  history. Personnel are not being rotated onto Ashlin for longer than sixty days,
+  under a standing instruction that gives no reason and permits no exception. Four
+  hundred thousand sets of clothing, folded, remain where they were found. The
+  salvage schedule does not cover them and no other schedule has been written.
+loss_summary: >
+  Ashlin is enemy-held and the Ellsmere grid is still running, which means whoever is
+  there now has light, heat and a functioning manufactorum. This has been raised twice
+  at sector level. Both times the recommendation was to deny the asset by orbital
+  action, and both times the recommendation was withdrawn without comment before it
+  could be signed. The file has been closed. The cause of death remains not
+  established.

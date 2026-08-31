@@ -1,0 +1,60 @@
+# The last card most surviving runs will see. Its choices are the main routes into the
+# glorious_death and quiet_survival endings.
+id: longwar_004_the_last_rotation
+stage: long_war
+tone: grim
+requires: {}
+weight: 5
+text: >
+  Somebody in the company worked out that you had been on Gathral Secundus longer than
+  any other man still standing, and for about a week this was treated as a joke. Then the
+  battalion clerk confirmed it in writing, and it stopped being a joke, and men began
+  standing slightly differently when you walked past.
+choices:
+  - id: one_more
+    label: "Take one more rotation forward"
+    stat_check: { stat: [T, WP], difficulty: -10 }
+    on_critical_success:
+      stat_changes: { T: 4, WP: 5, WS: 2 }
+      add_tags: [Decorated, Trench-Veteran, The-Old-Man]
+      result_text: >
+        Eleven days forward and you brought all of them back, including the two who
+        should not have come back and one who did not want to. The battalion started
+        using your name as a unit of measurement. That is not fame. It is worse and it
+        lasts longer.
+    on_success:
+      stat_changes: { T: 3, WP: 3 }
+      add_tags: [Trench-Veteran, The-Old-Man]
+      result_text: >
+        Eleven days forward, seven men back out of nine, which the log recorded as
+        within expectation. You came off the line walking, ate a hot meal, and slept for
+        nineteen hours. Nobody woke you. That was the whole of the reward and it was
+        sufficient.
+    on_failure:
+      terminal: true
+      ending_category: glorious_death
+      result_text: >
+        On the ninth day the forward bay took a mortar and you were the man nearest the
+        wounded, which by then you almost always were. You got two of them out. You were
+        going back for the third when the second round landed, and the men who were
+        there have told the story consistently, which is rare, and which is how everyone
+        knows it is true.
+  - id: stand_down
+    label: "Let the clerk file you for rotation out"
+    stat_changes: { WP: 2, Int: 2, T: -1 }
+    add_tags: [Rotated-Out, The-Old-Man]
+    result_text: >
+      He filed it and it went through, because the establishment needed a survivor
+      somewhere to instruct, and instructors are drawn from men who have demonstrably
+      survived. You packed a kit that weighed less than it had when you arrived. Nobody
+      made a speech. You were grateful for that.
+  - id: refuse_to_leave
+    label: "Refuse the rotation and stay with the section"
+    stat_changes: { Fel: 4, WP: 4, T: 2 }
+    add_tags: [Squad-Trusted, The-Old-Man, Refused-Rotation]
+    result_text: >
+      You told the clerk to lose the form and the clerk, who was not a bad man, lost it
+      for four months and then found it again when he was posted. In those four months
+      the section did not lose anybody. There is no mechanism in the Imperium for
+      recording why that happened, and it was you.
+terminal: false

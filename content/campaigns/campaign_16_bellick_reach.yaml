@@ -1,0 +1,30 @@
+id: campaign_16_bellick_reach
+name: "The Bellick Reach Harvest"
+region: region_varn_belt
+order: 16
+threshold: 215
+runs_ceiling: 13
+world_type: agri
+position: { x: 41.5, y: 54 }
+flavor_intro: >
+  Bellick Reach grows a single strain of hard wheat that will not germinate in
+  compacted soil, so tracked vehicles have been illegal here for six centuries.
+  The prohibition survived the arrival of an invasion fleet by eleven days, which
+  is longer than most people expected. Armour now runs the length of the Reach on
+  designated lanes, and an agricultural inspector follows each column recording
+  deviations for later assessment. Nobody has told him to stop. Nobody is certain
+  who would have the authority.
+win_summary: >
+  The Reach is held and the wheat is finished. Soil compaction across the northern
+  districts has been logged at a depth that agronomy says will take forty years to
+  recover, and the inspector's deviation report runs to nine hundred pages and has
+  been filed with the sector Administratum, where it will be read by nobody. Next
+  year's tithe assessment was set before the fighting and has not been adjusted.
+  The Reach will be short. The Reach will be fined.
+loss_summary: >
+  Bellick Reach was abandoned in good order over two nights, which is the phrase used
+  when the order to leave arrives before the enemy does. The seed vaults at Harrow
+  Cross were fired on withdrawal so that the strain would not be taken intact, a
+  decision made by a captain who did not know that the vaults were the only copy.
+  Agri-Command has confirmed that the Bellick strain is now extinct. The tithe
+  schedule still lists it under expected yields for the next four years.

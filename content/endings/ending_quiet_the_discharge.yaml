@@ -1,0 +1,12 @@
+id: ending_quiet_the_discharge
+category: quiet_survival
+tone: quiet
+requires: {}
+weight: 3
+headline: "HONOURABLE DISCHARGE"
+summary_template: >
+  {name}, {final_rank}, {regiment}, discharged at {age}, fit for light civil labour. You
+  were not decorated and you were not disgraced and the file records neither, which is
+  the outcome the system is actually built to produce and produces very rarely. You were
+  given a chit, a coat that did not fit, and a settlement allocation on a world with a
+  breathable atmosphere. Nobody on it has heard of Gathral Secundus.

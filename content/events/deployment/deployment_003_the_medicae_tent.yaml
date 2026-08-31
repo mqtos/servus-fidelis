@@ -1,0 +1,56 @@
+id: deployment_003_the_medicae_tent
+stage: deployment
+tone: quiet
+requires: {}
+weight: 5
+text: >
+  The medicae tent on the Gathral line had forty cots and a triage board with three
+  columns. The third column had no heading. Everybody knew what it was, and it was
+  understood that you did not ask the orderlies to write anything in it, because they
+  had stopped being able to hear that particular request.
+choices:
+  - id: sit_with_him
+    label: "Sit with the man in the third column"
+    stat_changes: { WP: 3, Fel: 3, T: -1 }
+    add_tags: [Squad-Trusted, Saw-The-Board]
+    result_text: >
+      It took most of a night. He talked about a river on a planet you had never heard
+      of and asked twice whether the position had held, and you told him yes both times,
+      and the second time it was still true. Nobody relieved you and nobody recorded it.
+  - id: get_your_hand_looked_at
+    label: "Get your own hand looked at"
+    stat_check: { stat: [T], difficulty: 10 }
+    on_success:
+      stat_changes: { T: 3 }
+      result_text: >
+        Two fingers strapped, a counterseptic that stung more than the injury, and a
+        chit returning you to duty in four days. The orderly wrote "minor" and moved on.
+        Minor is the best word in the Imperial medical vocabulary and almost nobody
+        gets it.
+    on_failure:
+      stat_changes: { T: -2, S: -1, WP: 2 }
+      add_tags: [Bad-Hand]
+      result_text: >
+        It had gone further than you thought and the treatment was correspondingly less
+        conversational. You kept the hand. It has never fully closed since and it aches
+        in cold weather, which on Gathral Secundus is a description of the calendar.
+  - id: take_the_supplies
+    label: "Take what you can carry on the way out"
+    stat_check: { stat: [Ag, Fel], difficulty: 0 }
+    on_success:
+      stat_changes: { Ag: 2, Fel: 2, Int: 1 }
+      add_tags: [Light-Fingered, Squad-Trusted]
+      result_text: >
+        Counterseptic, two field dressings and a stimm tab, distributed within the squad
+        that evening without discussion. Two of those items were used within the month
+        on people who would otherwise have gone into the third column. This is theft.
+        It is also the reason your squad liked you.
+    on_failure:
+      stat_changes: { Fel: -3, WP: 1 }
+      add_tags: [Known-To-Enforcers]
+      result_text: >
+        An orderly with a very good memory for faces reported the shortfall and your
+        face in the same sentence. It was too small a matter for a commissar and too
+        large a matter to forget, so it went in your file, where it sat quietly for
+        years and then came up at the worst possible moment.
+terminal: false

@@ -1,0 +1,28 @@
+id: campaign_09_tal_voren
+name: "The Quenching of Tal Voren"
+region: region_hesperine_forgeworks
+order: 9
+threshold: 190
+runs_ceiling: 12
+world_type: forge
+position: { x: 27, y: 18 }
+flavor_intro: >
+  Tal Voren has been burning for six hundred years by design. Its mantle taps feed
+  every forge in the region, and the operation to retake it is called a quenching
+  because the first step is to shut them, which nobody has done since they were cut.
+  The Mechanicus has provided a procedure in forty-one steps. Steps twelve through
+  thirty are in a language the liaison declines to translate, and the regiments
+  performing them have been issued phonetic cards.
+win_summary: >
+  The taps are shut. Tal Voren is cooling at nine degrees a year and will be
+  habitable in roughly two centuries, at which point the Mechanicus intends to open
+  them again. Regional forge output has dropped by a fifth and the Munitorum has
+  reallocated the shortfall to three worlds that were already behind. The phonetic
+  cards have been recalled and destroyed, and the soldiers who used them have been
+  reassigned individually to postings that do not overlap.
+loss_summary: >
+  Step twenty-six was performed correctly and the taps opened wider. Tal Voren's
+  surface temperature has risen past every figure the survey instruments were built
+  to record, so the current reading is simply the highest number the gauge contains.
+  The forges downstream are producing at a rate their own crews describe as
+  unsurvivable. Nobody has ordered them to stop. The world is listed as operational.

@@ -1,0 +1,32 @@
+id: campaign_23_sanctus_vool
+name: "Sanctus Vool"
+region: region_ambrosian_reach
+order: 23
+threshold: 310
+runs_ceiling: 14
+world_type: hive
+position: { x: 70, y: 26 }
+flavor_intro: >
+  Vool is a hive that grew up around a cathedral and never stopped, so the nave is
+  now four hundred levels below the surface and reachable only by the pilgrim shafts.
+  The Ecclesiarchy counts the population at nineteen million communicants. The
+  Administratum, using different criteria, counts four hundred and sixty million
+  people. Both figures appear in the defence plan, on different pages, and the
+  logistics annexe was written from the first one. Water and ration allocations for
+  the siege were calculated accordingly.
+win_summary: >
+  Sanctus Vool held, and the cathedral was never entered, and the shortfall between
+  the two population figures resolved itself over the course of the siege in the way
+  everyone involved had privately expected. The lower levels are now within nineteen
+  percent of the Ecclesiarchy's original count, which the Cardinal's office has
+  described as a return to accuracy. Reconstruction has been approved for the pilgrim
+  shafts and for nothing else. The Administratum has quietly adopted the smaller
+  figure for future assessments.
+loss_summary: >
+  The upper hive was evacuated over five weeks and the lower hive was not, the lift
+  capacity having been allocated against the communicant figure. Nineteen million
+  people were lifted off Sanctus Vool in good order and the operation is regarded
+  within the Munitorum as one of the more successful evacuations of the campaign.
+  The cathedral was left consecrated and intact, since deconsecration requires a rite
+  that takes eleven days and there were not eleven days. Sector command has recorded
+  the world as lost with honours.

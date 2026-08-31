@@ -1,0 +1,51 @@
+# Branch flag event per Content Bible 5. Seeds Commissariat-Noted, and is the first
+# place in a run where informing on someone has a mechanical future.
+id: training_004_the_commissars_question
+stage: training
+tone: grim
+requires: { stat_min: { WP: 42 } }
+weight: 4
+text: >
+  A junior commissar with a new cap and an old coat assembled your section and said that
+  a man in it had been heard questioning the tithe. He did not say who. He said he would
+  wait, and then he did wait, for a length of time that made it clear he had done this
+  before and knew exactly how long it takes.
+choices:
+  - id: name_him
+    label: "Name him"
+    stat_changes: { WP: 3, Fel: -3 }
+    add_tags: [Commissariat-Noted, Informer]
+    result_text: >
+      You gave the name. The commissar thanked you in front of everyone, which was not
+      kindness, and the man was taken away and did not come back and was not spoken of.
+      Your file gained a line that reads well to exactly one kind of reader, and that
+      reader is the kind who promotes people.
+  - id: name_yourself
+    label: "Say it was you"
+    stat_check: { stat: [WP], difficulty: -10 }
+    on_success:
+      stat_changes: { WP: 5, Fel: 3 }
+      add_tags: [Commissariat-Noted, Squad-Trusted]
+      result_text: >
+        You stepped forward and took it. The commissar looked at you for a long moment,
+        decided something, and gave you fourteen days of punishment detail instead of a
+        wall. The section knew what you had done. So did he, and he wrote it down, which
+        is not the same as forgiving it.
+    on_failure:
+      terminal: true
+      ending_category: disgrace
+      result_text: >
+        You stepped forward and he took you at your word, because that is what the word
+        is for. It was done behind the equipment store the same afternoon, with two
+        witnesses and a form. The man who had actually said it stood in the rank and
+        watched, and lived another six years, and was never any use to anyone.
+  - id: stay_silent
+    label: "Stand there and let the time pass"
+    stat_changes: { WP: 2, T: 2 }
+    add_tags: [Squad-Trusted]
+    result_text: >
+      Forty men said nothing for nineteen minutes. In the end the commissar dismissed the
+      section without selecting anyone, which some of you read as a defeat for him and
+      the rest of you correctly read as a filing decision. Nobody was shot. Everyone was
+      recorded.
+terminal: false
